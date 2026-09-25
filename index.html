@@ -97,7 +97,7 @@
       </div>
       <div class="hero__grid">
         <div>
-          <p class="status" data-status="club"><i></i><span data-es="Costa Daurada" data-en="Costa Daurada">Costa Daurada</span></p>
+          <p class="status" data-status="club"><i></i><span class="eq" aria-hidden="true"><i></i><i></i><i></i></span><span data-es="Costa Daurada" data-en="Costa Daurada">Costa Daurada</span></p>
           <h1 class="hero__brand">VOLTA</h1>
           <p class="hero__tag">Club · Sound · Kitchen</p>
           <p class="hero__lead" data-es="Cuatro salas, una terraza y la noche más nítida de Salou. Del primer cóctel al último drop." data-en="Four rooms, one terrace, and the sharpest night in Salou. From the first drink to the last drop.">Cuatro salas, una terraza y la noche más nítida de Salou. Del primer cóctel al último drop.</p>
@@ -253,10 +253,10 @@
 
     <section class="section--tight">
       <div class="wrap stats">
-        <div class="stat"><strong>4</strong><span data-es="Salas con estilo propio" data-en="Rooms, each with a sound">Salas con estilo propio</span></div>
-        <div class="stat"><strong>06</strong><span data-es="Cierre viernes y sábado" data-en="Friday and Saturday close">Cierre viernes y sábado</span></div>
-        <div class="stat"><strong>18</strong><span data-es="Apertura de terraza y cocina" data-en="Terrace and kitchen open">Apertura de terraza y cocina</span></div>
-        <div class="stat"><strong>+18</strong><span data-es="Con documento. Sin excepción." data-en="ID required. No exceptions.">Con documento. Sin excepción.</span></div>
+        <div class="stat"><strong data-count="4">4</strong><span data-es="Salas con estilo propio" data-en="Rooms, each with a sound">Salas con estilo propio</span></div>
+        <div class="stat"><strong data-count="6" data-pad="2">06</strong><span data-es="Cierre viernes y sábado" data-en="Friday and Saturday close">Cierre viernes y sábado</span></div>
+        <div class="stat"><strong data-count="18">18</strong><span data-es="Apertura de terraza y cocina" data-en="Terrace and kitchen open">Apertura de terraza y cocina</span></div>
+        <div class="stat"><strong data-count="18" data-prefix="+">+18</strong><span data-es="Con documento. Sin excepción." data-en="ID required. No exceptions.">Con documento. Sin excepción.</span></div>
       </div>
     </section>
 
@@ -384,5 +384,6 @@
   </footer>
   <noscript><style>html.i18n-wait body{visibility:visible}</style></noscript>
   <script src="js/main.js"></script>
+  <script src="js/ui.js" defer></script>
 </body>
 </html>
