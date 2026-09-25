@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Puerta — VOLTA</title>
+  <meta name="description" content="Validación de entradas en la puerta de VOLTA Salou.">
+  <meta name="theme-color" content="#06070b">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function () {
+      try {
+        var l = localStorage.getItem("volta-lang");
+        if (!l) l = (navigator.language || "").toLowerCase().indexOf("en") === 0 ? "en" : "es";
+        document.documentElement.lang = l;
+        document.documentElement.dataset.lang = l;
+        if (l === "en") document.documentElement.classList.add("i18n-wait");
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-page="door" data-es-title="Puerta — VOLTA" data-en-title="Door — VOLTA">
+  <a class="skip" href="#main" data-es="Saltar al contenido" data-en="Skip to content">Saltar al contenido</a>
+  <header class="site-header" data-header>
+    <a class="logo" href="index.html" aria-label="VOLTA">
+      <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true"><rect x="1.2" y="1.2" width="45.6" height="45.6" rx="14" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M15 15.5 24 33.5 33 15.5" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/><path d="M19.2 23.2h9.6" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/></svg>
+      <span class="logo__lockup"><span class="logo__word">VOLTA</span><span class="logo__place">Staff</span></span>
+    </a>
+    <div class="header__actions">
+      <button type="button" class="lang-switch" id="lang-switch">EN</button>
+    </div>
+  </header>
+
+  <main id="main" class="page-simple">
+    <section class="section">
+      <div class="wrap wrap-door">
+        <p class="kicker" data-es="Puerta" data-en="Door">Puerta</p>
+        <h1 class="display" style="font-size:clamp(2.2rem,5vw,3.4rem)" data-es="Validar entrada" data-en="Validate ticket">Validar entrada</h1>
+        <form id="door-form" class="door-form" novalidate>
+          <label class="field"><span data-es="Código de entrada" data-en="Ticket code">Código de entrada</span><input name="code" required autocapitalize="characters" autocomplete="off" spellcheck="false" placeholder="TR-XXXXXX-1"></label>
+          <label class="field"><span data-es="Código de sala" data-en="Room code">Código de sala</span><input name="staff" required autocomplete="off" inputmode="numeric" placeholder="····"></label>
+          <button class="btn btn--gold" type="submit" data-es="Validar entrada" data-en="Validate ticket">Validar entrada</button>
+        </form>
+        <div class="door-result" id="door-result" hidden></div>
+        <p class="fine" data-es="El código de sala lo reparte el responsable de turno. Una entrada usada no vuelve a pasar." data-en="The room code comes from the floor manager. A used ticket does not pass twice.">El código de sala lo reparte el responsable de turno. Una entrada usada no vuelve a pasar.</p>
+      </div>
+    </section>
+  </main>
+
+  <noscript><style>html.i18n-wait body{visibility:visible}</style></noscript>
+  <script src="js/main.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>

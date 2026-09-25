@@ -1,5 +1,5 @@
 (function () {
-  const PASS_KEY = "tropical-tickets-v1";
+  const PASS_KEY = "volta-tickets-v1";
   const COPY = {
     es: {
       loading: "Cargando la taquilla…",
@@ -514,7 +514,7 @@
     const stamp = ticket.status === "used" ? "is-used" : "is-paid";
     return '<article class="pass" id="pass-' + esc(ticket.code) + '">' +
       '<div class="pass__main">' +
-      '<div class="pass__top"><p class="kicker">Tropical Salou</p><span class="pass__stamp ' + stamp + '">' + esc(status) + "</span></div>" +
+      '<div class="pass__top"><p class="kicker">VOLTA</p><span class="pass__stamp ' + stamp + '">' + esc(status) + "</span></div>" +
       "<h2>" + esc(order.event.title) + "</h2>" +
       "<p class=\"pass__date\">" + esc(prettyDate(order.event.date)) + "</p>" +
       '<p class="fine">' + esc(t("doors")) + " " + esc(order.event.time) + " · " + esc(order.event.genre) + "</p>" +
@@ -548,7 +548,7 @@
       '<button type="button" class="btn btn--gold" id="print-pass">' + esc(t("print")) + "</button>" +
       '<button type="button" class="btn btn--ghost" id="copy-pass">' + esc(t("copy")) + "</button>" +
       '<a class="btn btn--ghost" href="checkout.html">' + esc(t("another")) + "</a>" +
-      '<a class="btn btn--ghost" href="door.html?code=' + encodeURIComponent((focus || shown[0].code)) + '">Door</a>' +
+      '<a class="btn btn--ghost" href="door.html?code=' + encodeURIComponent((focus || shown[0].code)) + '" data-es="Validar en puerta" data-en="At the door">Validar en puerta</a>' +
       "</div>";
     mountQr(root, order);
     if (focus) {
@@ -650,7 +650,7 @@
   if (page === "ticket") initTicket();
   if (page === "door") initDoor();
 
-  document.addEventListener("tropical:lang", function () {
+  document.addEventListener("volta:lang", function () {
     if (page === "checkout" && state.catalog) renderCheckout();
     if (page === "ticket") initTicket();
   });

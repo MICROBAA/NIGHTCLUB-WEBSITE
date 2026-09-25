@@ -1,7 +1,7 @@
 (function () {
-  const LANG_KEY = "tropical-lang";
-  const BOOK_KEY = "tropical-bookings-v1";
-  const COOKIE_KEY = "tropical-cookie";
+  const LANG_KEY = "volta-lang";
+  const BOOK_KEY = "volta-bookings-v1";
+  const COOKIE_KEY = "volta-cookie";
 
   const UI = {
     es: {
@@ -24,7 +24,7 @@
       errDate: "Elige una fecha.",
       errHoney: "No se ha podido enviar.",
       prepared: "Solicitud preparada",
-      preparedBody: "Aún no está confirmada. Envía el mensaje para que el equipo de Tropical la reciba.",
+      preparedBody: "Aún no está confirmada. Envía el mensaje para que el equipo de VOLTA la reciba.",
       ref: "Referencia",
       emptyBooks: "Todavía no hay solicitudes en este dispositivo.",
       booksTitle: "Mis solicitudes",
@@ -81,7 +81,7 @@
       errDate: "Choose a date.",
       errHoney: "Could not send.",
       prepared: "Request ready",
-      preparedBody: "It is not confirmed yet. Send the message so the Tropical team receives it.",
+      preparedBody: "It is not confirmed yet. Send the message so the VOLTA team receives it.",
       ref: "Reference",
       emptyBooks: "No requests saved on this device yet.",
       booksTitle: "My requests",
@@ -130,7 +130,7 @@
     club: "34695117539",
     vip: "34645727427",
     restaurant: "34699680057",
-    email: "direccion@tropicalsalou.com"
+    email: "hola@volta.club"
   };
 
   function t(key) {
@@ -354,7 +354,7 @@
     const card = document.getElementById(eventId);
     const dialog = document.getElementById("ticket-dialog");
     dialog.dataset.event = eventId;
-    const title = card ? (card.querySelector("h3") ? card.querySelector("h3").textContent.trim() : eventId) : "Tropical";
+    const title = card ? (card.querySelector("h3") ? card.querySelector("h3").textContent.trim() : eventId) : "VOLTA";
     const when = card ? (card.dataset.when || "") : "";
     document.getElementById("ticket-title").textContent = title;
     document.getElementById("ticket-kicker").textContent = when;
@@ -381,7 +381,7 @@
   function messageForTicket(data) {
     const lang = getLang();
     if (lang === "en") {
-      return "Hello Tropical, I would like to request tickets.\nRef: " + data.ref +
+      return "Hello VOLTA, I would like to request tickets.\nRef: " + data.ref +
         "\nEvent: " + data.event + "\nWhen: " + data.when +
         "\nTicket: " + data.ticket + " × " + data.qty +
         "\nIndicative total: " + data.total +
@@ -389,7 +389,7 @@
         (data.notes ? "\nNotes: " + data.notes : "") +
         "\n18+ confirmed. Please confirm availability and payment.";
     }
-    return "Hola Tropical, quiero solicitar entradas.\nRef: " + data.ref +
+    return "Hola VOLTA, quiero solicitar entradas.\nRef: " + data.ref +
       "\nEvento: " + data.event + "\nCuándo: " + data.when +
       "\nEntrada: " + data.ticket + " × " + data.qty +
       "\nTotal orientativo: " + data.total +
@@ -408,7 +408,7 @@
       "<p>" + t("preparedBody") + "</p>" +
       '<p class="fine">' + data.event + " · " + data.ticket + " × " + data.qty + " · " + data.total + "</p>" +
       '<div class="stack-btns"><a class="btn btn--gold" target="_blank" rel="noopener" href="' + waLink(phone, text) + '">' + t("request") + '</a>' +
-      '<a class="btn btn--ghost" href="mailto:' + PHONES.email + "?subject=" + encodeURIComponent("Tropical " + data.ref) + "&body=" + encodeURIComponent(text) + '">' + t("email") + '</a>' +
+      '<a class="btn btn--ghost" href="mailto:' + PHONES.email + "?subject=" + encodeURIComponent("VOLTA " + data.ref) + "&body=" + encodeURIComponent(text) + '">' + t("email") + '</a>' +
       '<button type="button" class="btn btn--ghost" id="copy-request">' + t("copy") + "</button></div>";
     const copyBtn = document.getElementById("copy-request");
     copyBtn.addEventListener("click", function () {
@@ -652,13 +652,13 @@
       const pack = fd.get("package");
       const ref = refCode();
       const text = lang === "en"
-        ? "Hello Tropical VIP, I would like a table.\nRef: " + ref +
+        ? "Hello VOLTA VIP, I would like a table.\nRef: " + ref +
           "\nPackage: " + pack + "\nDate: " + fd.get("date") + " " + fd.get("time") +
           "\nGuests: " + fd.get("guests") + "\nName: " + fd.get("name") +
           "\nPhone: " + fd.get("phone") + "\nEmail: " + fd.get("email") +
           (fd.get("notes") ? "\nNotes: " + fd.get("notes") : "") +
           "\nPlease confirm availability. 18+."
-        : "Hola Tropical VIP, quiero reservar mesa.\nRef: " + ref +
+        : "Hola VOLTA VIP, quiero reservar mesa.\nRef: " + ref +
           "\nPack: " + pack + "\nFecha: " + fd.get("date") + " " + fd.get("time") +
           "\nPersonas: " + fd.get("guests") + "\nNombre: " + fd.get("name") +
           "\nTeléfono: " + fd.get("phone") + "\nEmail: " + fd.get("email") +
@@ -670,26 +670,26 @@
       const lang = getLang();
       const ref = refCode();
       const text = lang === "en"
-        ? "Hello Tropical Fusion, I would like a table.\nRef: " + ref +
+        ? "Hello VOLTA Kitchen, I would like a table.\nRef: " + ref +
           "\nDate: " + fd.get("date") + " " + fd.get("time") +
           "\nGuests: " + fd.get("guests") + "\nName: " + fd.get("name") +
           "\nPhone: " + fd.get("phone") + "\nEmail: " + fd.get("email") +
           (fd.get("notes") ? "\nNotes: " + fd.get("notes") : "")
-        : "Hola Tropical Fusion, quiero reservar mesa.\nRef: " + ref +
+        : "Hola VOLTA Kitchen, quiero reservar mesa.\nRef: " + ref +
           "\nFecha: " + fd.get("date") + " " + fd.get("time") +
           "\nPersonas: " + fd.get("guests") + "\nNombre: " + fd.get("name") +
           "\nTeléfono: " + fd.get("phone") + "\nEmail: " + fd.get("email") +
           (fd.get("notes") ? "\nNotas: " + fd.get("notes") : "");
-      return { ref: ref, event: "Tropical Fusion", when: fd.get("date") + " " + fd.get("time"), ticket: "Mesa", qty: fd.get("guests"), total: "—", text: text };
+      return { ref: ref, event: "VOLTA Kitchen", when: fd.get("date") + " " + fd.get("time"), ticket: "Mesa", qty: fd.get("guests"), total: "—", text: text };
     });
     bindRequestForm("contact-form", "club", function (fd) {
       const lang = getLang();
       const ref = refCode();
       const text = lang === "en"
-        ? "Hello Tropical.\nRef: " + ref + "\nTopic: " + fd.get("topic") +
+        ? "Hello VOLTA.\nRef: " + ref + "\nTopic: " + fd.get("topic") +
           "\nName: " + fd.get("name") + "\nPhone: " + fd.get("phone") + "\nEmail: " + fd.get("email") +
           "\nMessage: " + fd.get("message")
-        : "Hola Tropical.\nRef: " + ref + "\nTema: " + fd.get("topic") +
+        : "Hola VOLTA.\nRef: " + ref + "\nTema: " + fd.get("topic") +
           "\nNombre: " + fd.get("name") + "\nTeléfono: " + fd.get("phone") + "\nEmail: " + fd.get("email") +
           "\nMensaje: " + fd.get("message");
       return { ref: ref, event: fd.get("topic"), when: "", ticket: "Contacto", qty: 1, total: "—", text: text };
@@ -745,7 +745,7 @@
       const ticket = event.target.closest("[data-ticket]");
       if (ticket) {
         event.preventDefault();
-        openTicket(ticket.dataset.ticket);
+        window.location.href = "checkout.html?event=" + encodeURIComponent(ticket.dataset.ticket);
       }
       const step = event.target.closest("[data-step]");
       if (step && document.getElementById("qty-out")) {

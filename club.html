@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>El Club — Tropical Salou</title>
-  <meta name="description" content="Cuatro salas, terraza, shisha y noches temáticas en Tropical Salou. Latin, reggaetón, house y commercial.">
-  <meta name="theme-color" content="#090807">
+  <title>El Club — VOLTA</title>
+  <meta name="description" content="Cuatro salas, terraza, shisha y noches temáticas en VOLTA. Latin, reggaetón, house y commercial.">
+  <meta name="theme-color" content="#06070b">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,620;1,9..144,460;1,9..144,560&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <script>
     (function () {
       try {
-        var l = localStorage.getItem("tropical-lang");
+        var l = localStorage.getItem("volta-lang");
         if (!l) l = (navigator.language || "").toLowerCase().indexOf("en") === 0 ? "en" : "es";
         document.documentElement.lang = l;
         document.documentElement.dataset.lang = l;
@@ -24,12 +24,12 @@
     })();
   </script>
 </head>
-<body data-page="club" data-es-title="El Club — Tropical Salou" data-en-title="The Club — Tropical Salou">
+<body data-page="club" data-es-title="El Club — VOLTA" data-en-title="The Club — VOLTA">
   <a class="skip" href="#main" data-es="Saltar al contenido" data-en="Skip to content">Saltar al contenido</a>
   <header class="site-header" data-header>
-    <a class="logo" href="index.html" aria-label="Tropical Salou">
-      <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="1.1"/><path d="M24 36.2V27M24 27c-1.1-3.8-4.4-6.2-8.8-6.8 4 1.1 6.6 3.2 7.8 6.2M24 27c1.1-3.8 4.4-6.2 8.8-6.8-4 1.1-6.6 3.2-7.8 6.2M24 25V17" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><circle cx="33.2" cy="15.2" r="1.25" fill="currentColor"/></svg>
-      <span class="logo__lockup"><span class="logo__word">Tropical</span><span class="logo__place">Salou</span></span>
+    <a class="logo" href="index.html" aria-label="VOLTA">
+      <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true"><rect x="1.2" y="1.2" width="45.6" height="45.6" rx="14" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M15 15.5 24 33.5 33 15.5" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/><path d="M19.2 23.2h9.6" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/></svg>
+      <span class="logo__lockup"><span class="logo__word">VOLTA</span><span class="logo__place">Salou</span></span>
     </a>
     <nav class="nav" aria-label="Principal">
       <a href="events.html" data-es="Eventos" data-en="Events">Eventos</a>
@@ -57,10 +57,10 @@
 
   <main id="main">
     <header class="page-hero">
-      <div class="page-hero__media"><img src="assets/images/hero.jpg" alt="Interior de Tropical Salou" data-es-alt="Interior de Tropical Salou" data-en-alt="Inside Tropical Salou"></div>
+      <div class="page-hero__media"><img src="assets/images/hero.jpg" alt="Interior de VOLTA" data-es-alt="Interior de VOLTA" data-en-alt="Inside VOLTA"></div>
       <div class="wrap page-hero__content">
         <p class="status" data-status="club"><i></i><span>Club</span></p>
-        <h1 class="display"><span data-es="El club" data-en="The club">El club</span> <em>Tropical</em></h1>
+        <h1 class="display"><span data-es="El club" data-en="The club">El club</span> <em>VOLTA</em></h1>
         <p class="lede" data-es="Una discoteca de varias plantas en Avinguda de Carles Buïgas. Elige sala. O no elijas y recórrelas todas." data-en="A multi-level disco on Avinguda de Carles Buïgas. Pick a room. Or don’t, and walk them all.">Una discoteca de varias plantas en Avinguda de Carles Buïgas. Elige sala. O no elijas y recórrelas todas.</p>
       </div>
     </header>
@@ -68,17 +68,17 @@
     <section class="section">
       <div class="wrap rooms-switch" data-room-switch>
         <div class="room-tabs" role="tablist">
-          <button type="button" class="chip is-on" data-room="main" role="tab" aria-selected="true">01 Principal</button>
+          <button type="button" class="chip is-on" data-room="main" role="tab" aria-selected="true">01 Floor</button>
           <button type="button" class="chip" data-room="house" role="tab">02 House</button>
-          <button type="button" class="chip" data-room="sky" role="tab">03 Sky</button>
-          <button type="button" class="chip" data-room="fusion" role="tab">04 Fusion</button>
+          <button type="button" class="chip" data-room="sky" role="tab">03 Roof</button>
+          <button type="button" class="chip" data-room="fusion" role="tab">04 Glass</button>
           <button type="button" class="chip" data-room="terraza" role="tab" data-es="05 Terraza" data-en="05 Terrace">05 Terraza</button>
         </div>
         <article class="room-panel is-active" id="room-main">
           <img src="assets/images/hero.jpg" alt="Sala principal">
           <div>
             <p class="kicker">01</p>
-            <h2 data-es="Sala principal" data-en="Main room">Sala principal</h2>
+            <h2>Floor</h2>
             <p class="lede" data-es="La pista grande. Reggaetón, latin y los hits que llenan Salou. Aquí es donde la noche llega a su punto." data-en="The big floor. Reggaeton, latin and the hits that fill Salou. This is where the night peaks.">La pista grande. Reggaetón, latin y los hits que llenan Salou. Aquí es donde la noche llega a su punto.</p>
           </div>
         </article>
@@ -94,7 +94,7 @@
           <img src="assets/images/dance.jpg" alt="Sky Garden">
           <div>
             <p class="kicker">03</p>
-            <h2>Sky Garden</h2>
+            <h2>Roof</h2>
             <p class="lede" data-es="Planta alta, más aire, mirada larga. Commercial e internacional cuando la noche sube de piso." data-en="Upper floor, more air, a longer view. Commercial and international as the night climbs a storey.">Planta alta, más aire, mirada larga. Commercial e internacional cuando la noche sube de piso.</p>
           </div>
         </article>
@@ -102,7 +102,7 @@
           <img src="assets/images/vip.jpg" alt="Sala Fusion">
           <div>
             <p class="kicker">04</p>
-            <h2>Tropical Fusion</h2>
+            <h2>Glass</h2>
             <p class="lede" data-es="La sala glam junto al restaurante. La cena se convierte en fiesta sin cambiar de dirección." data-en="The glam room beside the restaurant. Dinner becomes the party without changing address.">La sala glam junto al restaurante. La cena se convierte en fiesta sin cambiar de dirección.</p>
           </div>
         </article>
@@ -111,7 +111,7 @@
           <div>
             <p class="kicker">05</p>
             <h2 data-es="Terraza" data-en="Terrace">Terraza</h2>
-            <p class="lede" data-es="Cócteles exóticos, shisha y un arranque más lento que igual acaba en el bajo. El aire de Salou, con palmera." data-en="Exotic cocktails, shisha, and a slower start that still finds the bass. Salou air, with a palm.">Cócteles exóticos, shisha y un arranque más lento que igual acaba en el bajo. El aire de Salou, con palmera.</p>
+            <p class="lede" data-es="Cócteles, shisha y un arranque más lento que igual acaba en el bajo. Aire de Salou, luz fría." data-en="Cocktails, shisha, and a slower start that still finds the bass. Salou air, cold light.">Cócteles, shisha y un arranque más lento que igual acaba en el bajo. Aire de Salou, luz fría.</p>
           </div>
         </article>
       </div>
@@ -123,9 +123,9 @@
           <p class="kicker" data-es="Una noche tipo" data-en="A typical night">Una noche tipo</p>
           <h2 class="display" style="font-size:clamp(2.2rem,4vw,3.4rem)"><span data-es="Del atardecer" data-en="From dusk">Del atardecer</span> <em data-es="al cierre" data-en="to close">al cierre</em></h2>
           <ol class="timeline">
-            <li><strong>18:00</strong><span data-es="Abre la terraza y Tropical Fusion. Cóctel, cena, shisha." data-en="Terrace and Tropical Fusion open. Cocktail, dinner, shisha.">Abre la terraza y Tropical Fusion. Cóctel, cena, shisha.</span></li>
+            <li><strong>18:00</strong><span data-es="Abre la terraza y VOLTA Kitchen. Cóctel, cena, shisha." data-en="Terrace and VOLTA Kitchen open. Cocktail, dinner, shisha.">Abre la terraza y VOLTA Kitchen. Cóctel, cena, shisha.</span></li>
             <li><strong>22:00</strong><span data-es="Las salas cogen ritmo. Muchas temáticas arrancan aquí." data-en="The rooms pick up. Many themed nights start here.">Las salas cogen ritmo. Muchas temáticas arrancan aquí.</span></li>
-            <li><strong>00:00</strong><span data-es="Punto alto. This is Tropical y las noches de madrugada entran a esta hora." data-en="The peak. This is Tropical and the after-midnight nights start now.">Punto alto. This is Tropical y las noches de madrugada entran a esta hora.</span></li>
+            <li><strong>00:00</strong><span data-es="Punto alto. This is Volta y las noches de madrugada entran a esta hora." data-en="The peak. This is Volta and the after-midnight nights start now.">Punto alto. This is Volta y las noches de madrugada entran a esta hora.</span></li>
             <li><strong>05:00</strong><span data-es="Cierre de domingo a jueves. Viernes, sábado y festivos, hasta las 06:00." data-en="Close Sunday to Thursday. Friday, Saturday and holidays, until 06:00.">Cierre de domingo a jueves. Viernes, sábado y festivos, hasta las 06:00.</span></li>
           </ol>
         </div>
@@ -154,7 +154,7 @@
         </div>
         <div class="packages packages--3">
           <article class="package"><p class="kicker">DJ</p><h3>Flow Marttin</h3><p class="muted" data-es="House e internacional en la programación de la casa." data-en="House and international on the house programme.">House e internacional en la programación de la casa.</p></article>
-          <article class="package"><p class="kicker">DJ</p><h3>Eric Mass</h3><p class="muted" data-es="Residente de las noches Tropical." data-en="Resident of the Tropical nights.">Residente de las noches Tropical.</p></article>
+          <article class="package"><p class="kicker">DJ</p><h3>Eric Mass</h3><p class="muted" data-es="Residente de las noches VOLTA." data-en="Resident of the VOLTA nights.">Residente de las noches VOLTA.</p></article>
           <article class="package"><p class="kicker">DJ</p><h3>Rodex</h3><p class="muted" data-es="En la rotación de la cabina del club." data-en="In the club booth rotation.">En la rotación de la cabina del club.</p></article>
         </div>
         <p class="fine" data-es="La cabina cambia con la temporada y la temática. El cartel de cada noche manda." data-en="The booth changes with the season and the theme. That night’s lineup leads.">La cabina cambia con la temporada y la temática. El cartel de cada noche manda.</p>
@@ -183,8 +183,8 @@
 
   <footer class="site-footer">
     <div class="wrap footer-base">
-      <p>© 2026 Tropical Salou · Avinguda de Carles Buïgas, 39 · +18</p>
-      <p><a href="index.html">Tropical</a> · <a href="legal.html" data-es="Aviso legal" data-en="Legal">Aviso legal</a> · <a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a></p>
+      <p>© 2026 VOLTA · Avinguda de Carles Buïgas, 39 · +18</p>
+      <p><a href="index.html">VOLTA</a> · <a href="legal.html" data-es="Aviso legal" data-en="Legal">Aviso legal</a> · <a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a></p>
     </div>
   </footer>
   <noscript><style>html.i18n-wait body{visibility:visible}</style></noscript>

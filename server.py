@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Tropical Tickets — static site plus the box office.
+"""VOLTA Tickets — static site plus the box office.
 
 Card numbers and CVC codes are refused. The browser may send the last four
 digits only. Totals are calculated here, never trusted from the client.
@@ -25,7 +25,7 @@ ORDERS_PATH = os.path.join(ROOT, "data", "orders.json")
 EVENTS_PATH = os.path.join(ROOT, "data", "events.json")
 MADRID = ZoneInfo("Europe/Madrid")
 LOCK = threading.Lock()
-STAFF_CODE = os.environ.get("TROPICAL_DOOR", "1839")
+STAFF_CODE = os.environ.get("VOLTA_DOOR", "1839")
 MAX_QTY = 8
 ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"
 
@@ -231,7 +231,7 @@ ERRORS = {
 
 
 class Handler(SimpleHTTPRequestHandler):
-    server_version = "TropicalTickets/1.0"
+    server_version = "VoltaTickets/1.0"
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=ROOT, **kwargs)
@@ -539,7 +539,7 @@ class Handler(SimpleHTTPRequestHandler):
 def main() -> None:
     os.chdir(ROOT)
     server = ThreadingHTTPServer(("0.0.0.0", 4173), Handler)
-    print("Tropical Tickets on http://0.0.0.0:4173", flush=True)
+    print("VOLTA Tickets on http://0.0.0.0:4173", flush=True)
     server.serve_forever()
 
 

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tu entrada — VOLTA</title>
+  <meta name="description" content="Tu entrada de VOLTA Salou: código y QR para la puerta.">
+  <meta name="theme-color" content="#06070b">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function () {
+      try {
+        var l = localStorage.getItem("volta-lang");
+        if (!l) l = (navigator.language || "").toLowerCase().indexOf("en") === 0 ? "en" : "es";
+        document.documentElement.lang = l;
+        document.documentElement.dataset.lang = l;
+        if (l === "en") document.documentElement.classList.add("i18n-wait");
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-page="ticket" data-es-title="Tu entrada — VOLTA" data-en-title="Your ticket — VOLTA">
+  <a class="skip" href="#main" data-es="Saltar al contenido" data-en="Skip to content">Saltar al contenido</a>
+  <header class="site-header" data-header>
+    <a class="logo" href="index.html" aria-label="VOLTA">
+      <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true"><rect x="1.2" y="1.2" width="45.6" height="45.6" rx="14" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M15 15.5 24 33.5 33 15.5" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/><path d="M19.2 23.2h9.6" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/></svg>
+      <span class="logo__lockup"><span class="logo__word">VOLTA</span><span class="logo__place">Salou</span></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="events.html" data-es="Eventos" data-en="Events" aria-current="page">Eventos</a>
+      <a href="club.html" data-es="El Club" data-en="The Club">El Club</a>
+      <a href="restaurant.html" data-es="Restaurante" data-en="Restaurant">Restaurante</a>
+      <a href="gallery.html" data-es="Galería" data-en="Gallery">Galería</a>
+      <a href="vip.html">VIP</a>
+      <a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a>
+    </nav>
+    <div class="header__actions">
+      <button type="button" class="lang-switch" id="lang-switch">EN</button>
+      <a class="btn btn--gold btn--small" href="checkout.html" data-es="Comprar" data-en="Buy">Comprar</a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-panel" aria-label="Menú"><span></span></button>
+    </div>
+  </header>
+  <div class="nav-panel" id="nav-panel" inert>
+    <a href="events.html" data-es="Eventos" data-en="Events" aria-current="page">Eventos</a>
+    <a href="club.html" data-es="El Club" data-en="The Club">El Club</a>
+    <a href="restaurant.html" data-es="Restaurante" data-en="Restaurant">Restaurante</a>
+    <a href="gallery.html" data-es="Galería" data-en="Gallery">Galería</a>
+    <a href="vip.html">VIP</a>
+    <a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a>
+    <a href="menu.html" data-es="Carta" data-en="Menu">Carta</a>
+  </div>
+
+  <main id="main" class="page-simple">
+    <section class="section">
+      <div class="wrap wrap-ticket">
+        <p class="kicker">VOLTA · Salou</p>
+        <div id="ticket-root">
+          <p class="muted" data-es="Cargando…" data-en="Loading…">Cargando…</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-base">
+      <p>© 2026 VOLTA · +18</p>
+      <p><a href="checkout.html" data-es="Comprar entradas" data-en="Buy tickets">Comprar entradas</a> · <a href="legal.html" data-es="Aviso legal" data-en="Legal notice">Aviso legal</a></p>
+    </div>
+  </footer>
+
+  <noscript><style>html.i18n-wait body{visibility:visible}</style></noscript>
+  <script src="js/main.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>
