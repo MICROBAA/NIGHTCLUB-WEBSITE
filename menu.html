@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carta — Tropical Fusion</title>
+  <meta name="description" content="Carta de Tropical Fusion en Salou: entrantes, sushi, arroces al Josper, pescados y carnes.">
+  <meta name="theme-color" content="#f4efe6">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,620;1,9..144,460;1,9..144,560&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function () {
+      try {
+        var l = localStorage.getItem("tropical-lang");
+        if (!l) l = (navigator.language || "").toLowerCase().indexOf("en") === 0 ? "en" : "es";
+        document.documentElement.lang = l;
+        document.documentElement.dataset.lang = l;
+        if (l === "en") document.documentElement.classList.add("i18n-wait");
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body class="theme-day" data-page="menu" data-es-title="Carta — Tropical Fusion" data-en-title="Menu — Tropical Fusion" style="background:#f4efe6;color:#16130f">
+  <a class="skip" href="#main" data-es="Saltar al contenido" data-en="Skip to content">Saltar al contenido</a>
+  <header class="site-header" data-header>
+    <a class="logo" href="index.html" aria-label="Tropical Salou">
+      <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="1.1"/><path d="M24 36V26" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M14 24c3-6 6-8 10-8s7 2 10 8c-3-2-6-3-10-3s-7 1-10 3z" fill="currentColor"/><circle cx="33" cy="15" r="1.2" fill="currentColor"/></svg>
+      <span class="logo__lockup"><span class="logo__word">Tropical</span><span class="logo__place">Salou</span></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="events.html" data-es="Eventos" data-en="Events">Eventos</a>
+      <a href="club.html" data-es="El Club" data-en="The Club">El Club</a>
+      <a href="restaurant.html" data-es="Restaurante" data-en="Restaurant" aria-current="page">Restaurante</a>
+      <a href="gallery.html" data-es="Galería" data-en="Gallery">Galería</a>
+      <a href="vip.html">VIP</a>
+      <a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a>
+    </nav>
+    <div class="header__actions">
+      <button type="button" class="icon-btn" id="open-bookings" aria-label="Mis solicitudes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 4.5h12v16l-6-3.2L6 20.5v-16z"/></svg><span class="badge" id="bookings-count" hidden>0</span></button>
+      <button type="button" class="lang-switch" id="lang-switch">EN</button>
+      <a class="btn btn--gold btn--small" href="restaurant.html#reserva" data-es="Reservar" data-en="Book">Reservar</a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-panel" aria-label="Menú"><span></span></button>
+    </div>
+  </header>
+  <div class="nav-panel" id="nav-panel" inert>
+    <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
+    <a href="restaurant.html" data-es="Restaurante" data-en="Restaurant">Restaurante</a>
+    <a href="menu.html" aria-current="page" data-es="Carta" data-en="Menu">Carta</a>
+    <a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a>
+  </div>
+
+  <main id="main">
+    <header class="page-hero">
+      <div class="page-hero__media"><img src="assets/images/sushi.jpg" alt="Carta de sushi" data-es-alt="Carta de sushi" data-en-alt="Sushi from the menu"></div>
+      <div class="wrap page-hero__content">
+        <p class="kicker">Tropical Fusion</p>
+        <h1 class="display" data-es="La carta" data-en="The menu">La carta</h1>
+        <p class="lede" data-es="Una selección de la carta publicada por el restaurante. En sala puede haber cambios de mercado. Alérgenos: consúltalos al equipo." data-en="A selection from the menu published by the restaurant. The room may change with the market. Allergens: ask the team.">Una selección de la carta publicada por el restaurante. En sala puede haber cambios de mercado. Alérgenos: consúltalos al equipo.</p>
+      </div>
+    </header>
+
+    <section class="section section--ivory">
+      <div class="wrap">
+        <div class="menu-tools">
+          <div class="chips">
+            <button type="button" class="chip is-on" data-cat-filter="all" data-es="Todo" data-en="All">Todo</button>
+            <button type="button" class="chip" data-cat-filter="cold" data-es="Fríos" data-en="Cold">Fríos</button>
+            <button type="button" class="chip" data-cat-filter="hot" data-es="Calientes" data-en="Hot">Calientes</button>
+            <button type="button" class="chip" data-cat-filter="pasta" data-es="Pasta" data-en="Pasta">Pasta</button>
+            <button type="button" class="chip" data-cat-filter="rice" data-es="Arroces" data-en="Rice">Arroces</button>
+            <button type="button" class="chip" data-cat-filter="fish" data-es="Pescados" data-en="Fish">Pescados</button>
+            <button type="button" class="chip" data-cat-filter="meat" data-es="Carnes" data-en="Meat">Carnes</button>
+            <button type="button" class="chip" data-cat-filter="sushi">Sushi</button>
+            <button type="button" class="chip" data-cat-filter="wok">Wok</button>
+          </div>
+          <input class="menu-search" id="menu-search" type="search" data-es-placeholder="Buscar plato" data-en-placeholder="Search a dish" placeholder="Buscar plato" aria-label="Buscar">
+        </div>
+
+        <section class="menu-group" data-cat="cold">
+          <h2 data-es="Entrantes fríos" data-en="Cold starters">Entrantes fríos</h2>
+          <article class="dish"><div><h3 data-es="Pan de cristal tostado con tomate y AOVE" data-en="Grilled crystal bread, tomato and olive oil">Pan de cristal tostado con tomate y AOVE</h3><p class="allergens">Gluten</p></div><span class="price">4,50 €</span></article>
+          <article class="dish"><div><h3 data-es="Jamón ibérico Belloterra con pan de cristal" data-en="Belloterra Iberian ham with crystal bread">Jamón ibérico Belloterra con pan de cristal</h3><p class="allergens">Gluten</p></div><span class="price">31,50 €</span></article>
+          <article class="dish"><div><h3 data-es="Ensalada de pollo crujiente, parmesano y miel" data-en="Crispy chicken salad, parmesan and honey">Ensalada de pollo crujiente, parmesano y miel</h3><p class="allergens" data-es="Gluten, lácteos, mostaza" data-en="Gluten, dairy, mustard">Gluten, lácteos, mostaza</p></div><span class="price">17 €</span></article>
+          <article class="dish"><div><h3 data-es="Ensalada Thai de pato crujiente y fresa" data-en="Thai salad, crispy duck and strawberry">Ensalada Thai de pato crujiente y fresa</h3><p class="allergens" data-es="Huevo" data-en="Egg">Huevo</p></div><span class="price">19 €</span></article>
+          <article class="dish"><div><h3 data-es="Carpaccio de atún rojo Gadira, ikura y yuzu" data-en="Gadira bluefin carpaccio, ikura and yuzu">Carpaccio de atún rojo Gadira, ikura y yuzu</h3><p class="allergens" data-es="Huevo, pescado" data-en="Egg, fish">Huevo, pescado</p></div><span class="price">21 €</span></article>
+          <article class="dish"><div><h3 data-es="Tartar de salmón, cítricos y aguacate" data-en="Salmon tartare, citrus and avocado">Tartar de salmón, cítricos y aguacate</h3><p class="allergens" data-es="Pescado" data-en="Fish">Pescado</p></div><span class="price">19 €</span></article>
+        </section>
+
+        <section class="menu-group" data-cat="hot">
+          <h2 data-es="Entrantes calientes" data-en="Hot starters">Entrantes calientes</h2>
+          <article class="dish"><div><h3 data-es="Bravas en doble cocción" data-en="Twice-cooked bravas">Bravas en doble cocción</h3><p class="allergens" data-es="Huevo" data-en="Egg">Huevo</p></div><span class="price">9,50 €</span></article>
+          <article class="dish"><div><h3 data-es="Croquetas de jamón ibérico, 8 uds." data-en="Iberian ham croquettes, 8 pcs">Croquetas de jamón ibérico, 8 uds.</h3><p class="allergens" data-es="Gluten, huevo, lácteos" data-en="Gluten, egg, dairy">Gluten, huevo, lácteos</p></div><span class="price">12 €</span></article>
+          <article class="dish"><div><h3 data-es="Gamba roja de Tarragona a la parrilla, 9 uds." data-en="Grilled Tarragona red prawns, 9 pcs">Gamba roja de Tarragona a la parrilla, 9 uds.</h3><p class="allergens" data-es="Marisco" data-en="Shellfish">Marisco</p></div><span class="price">29,50 €</span></article>
+          <article class="dish"><div><h3 data-es="Tempura de langostino con kimchi" data-en="Prawn tempura with kimchi">Tempura de langostino con kimchi</h3><p class="allergens" data-es="Gluten, marisco, huevo, soja" data-en="Gluten, shellfish, egg, soy">Gluten, marisco, huevo, soja</p></div><span class="price">18 €</span></article>
+          <article class="dish"><div><h3 data-es="Gyozas de langostino, 8 uds." data-en="Prawn gyoza, 8 pcs">Gyozas de langostino, 8 uds.</h3><p class="allergens" data-es="Marisco, sésamo" data-en="Shellfish, sesame">Marisco, sésamo</p></div><span class="price">17,50 €</span></article>
+          <article class="dish"><div><h3 data-es="Alcachofas confitadas, foie y velo ibérico" data-en="Confit artichokes, foie and Iberian veil">Alcachofas confitadas, foie y velo ibérico</h3><p class="allergens" data-es="Lácteos" data-en="Dairy">Lácteos</p></div><span class="price">21 €</span></article>
+        </section>
+
+        <section class="menu-group" data-cat="pasta">
+          <h2 data-es="Pizzas y pastas" data-en="Pizza and pasta">Pizzas y pastas</h2>
+          <article class="dish"><div><h3>Pizza Tropical Fusion</h3><p data-es="Tomate, mozzarella, verduras al wok y pollo teriyaki" data-en="Tomato, mozzarella, wok vegetables and teriyaki chicken">Tomate, mozzarella, verduras al wok y pollo teriyaki</p></div><span class="price">14 €</span></article>
+          <article class="dish"><div><h3 data-es="Pizza carbonara ibérica" data-en="Iberian carbonara pizza">Pizza carbonara ibérica</h3><p class="allergens" data-es="Gluten, lácteos" data-en="Gluten, dairy">Gluten, lácteos</p></div><span class="price">16 €</span></article>
+          <article class="dish"><div><h3 data-es="Pizza 4 quesos" data-en="Four-cheese pizza">Pizza 4 quesos</h3><p class="allergens" data-es="Gluten, lácteos" data-en="Gluten, dairy">Gluten, lácteos</p></div><span class="price">15 €</span></article>
+          <article class="dish"><div><h3 data-es="Ravioli de trufa y carbonara ibérica" data-en="Truffle ravioli and Iberian carbonara">Ravioli de trufa y carbonara ibérica</h3><p class="allergens" data-es="Gluten, lácteos" data-en="Gluten, dairy">Gluten, lácteos</p></div><span class="price">15,50 €</span></article>
+          <article class="dish"><div><h3 data-es="Tagliatelle, pesto y salmón ahumado" data-en="Tagliatelle, pesto and smoked salmon">Tagliatelle, pesto y salmón ahumado</h3><p class="allergens" data-es="Gluten, pescado, frutos secos" data-en="Gluten, fish, nuts">Gluten, pescado, frutos secos</p></div><span class="price">14 €</span></article>
+        </section>
+
+        <section class="menu-group" data-cat="rice">
+          <h2 data-es="Arroces" data-en="Rice">Arroces</h2>
+          <p class="note" data-es="Precio por persona. Mínimo 2. Hechos al Josper con brasa de encina." data-en="Price per person. Minimum 2. Cooked in the Josper over oak embers.">Precio por persona. Mínimo 2. Hechos al Josper con brasa de encina.</p>
+          <article class="dish"><div><h3 data-es="Paella de bogavante y sepia" data-en="Lobster and cuttlefish paella">Paella de bogavante y sepia</h3><p class="allergens" data-es="Marisco" data-en="Shellfish">Marisco</p></div><span class="price">25 €</span></article>
+          <article class="dish"><div><h3 data-es="Paella de marisco con cigalas y gambas" data-en="Seafood paella with langoustine and prawns">Paella de marisco con cigalas y gambas</h3><p class="allergens" data-es="Marisco" data-en="Shellfish">Marisco</p></div><span class="price">22,50 €</span></article>
+          <article class="dish"><div><h3 data-es="Paella de gamba roja de Tarragona" data-en="Tarragona red prawn paella">Paella de gamba roja de Tarragona</h3><p class="allergens" data-es="Marisco" data-en="Shellfish">Marisco</p></div><span class="price">24 €</span></article>
+          <article class="dish"><div><h3 data-es="Arroz de entrecot, ceps y trufa" data-en="Rice with ribeye, ceps and truffle">Arroz de entrecot, ceps y trufa</h3><p data-es="Consultar alérgenos" data-en="Ask about allergens">Consultar alérgenos</p></div><span class="price">26 €</span></article>
+        </section>
+
+        <section class="menu-group" data-cat="fish">
+          <h2 data-es="Pescados" data-en="Fish">Pescados</h2>
+          <article class="dish"><div><h3 data-es="Corvina, alcachofas, gambas y romesco" data-en="Meagre, artichokes, prawns and romesco">Corvina, alcachofas, gambas y romesco</h3><p class="allergens" data-es="Pescado, marisco, frutos secos" data-en="Fish, shellfish, nuts">Pescado, marisco, frutos secos</p></div><span class="price">22 €</span></article>
+          <article class="dish"><div><h3 data-es="Tataki de atún rojo Gadira" data-en="Gadira bluefin tataki">Tataki de atún rojo Gadira</h3><p class="allergens" data-es="Pescado, soja" data-en="Fish, soy">Pescado, soja</p></div><span class="price">24,50 €</span></article>
+          <article class="dish"><div><h3 data-es="Pulpo a la brasa y chimichurri de kimchi" data-en="Grilled octopus and kimchi chimichurri">Pulpo a la brasa y chimichurri de kimchi</h3><p class="allergens" data-es="Moluscos, soja" data-en="Molluscs, soy">Moluscos, soja</p></div><span class="price">25,50 €</span></article>
+          <article class="dish"><div><h3 data-es="Salmón teriyaki y noodles" data-en="Teriyaki salmon and noodles">Salmón teriyaki y noodles</h3><p class="allergens" data-es="Pescado, marisco, soja" data-en="Fish, shellfish, soy">Pescado, marisco, soja</p></div><span class="price">20,50 €</span></article>
+        </section>
+
+        <section class="menu-group" data-cat="meat">
+          <h2 data-es="Carnes" data-en="Meat">Carnes</h2>
+          <p class="note" data-es="A la brasa, horno Josper." data-en="Grilled in the Josper oven.">A la brasa, horno Josper.</p>
+          <article class="dish"><div><h3 data-es="Entrecot de vaca madurada" data-en="Dry-aged ribeye">Entrecot de vaca madurada</h3></div><span class="price">26,50 €</span></article>
+          <article class="dish"><div><h3 data-es="Chuletón Black Angus, 600 g" data-en="Black Angus rib, 600 g">Chuletón Black Angus, 600 g</h3></div><span class="price">69 €</span></article>
+          <article class="dish"><div><h3 data-es="Solomillo gallego con foie" data-en="Galician fillet with foie">Solomillo gallego con foie</h3><p class="allergens" data-es="Lácteos, gluten, huevo" data-en="Dairy, gluten, egg">Lácteos, gluten, huevo</p></div><span class="price">32,50 €</span></article>
+          <article class="dish"><div><h3 data-es="Brochetas yakitori de pollo" data-en="Chicken yakitori skewers">Brochetas yakitori de pollo</h3><p class="allergens" data-es="Huevo, soja, gluten, sésamo" data-en="Egg, soy, gluten, sesame">Huevo, soja, gluten, sésamo</p></div><span class="price">17 €</span></article>
+          <article class="dish"><div><h3 data-es="Hamburguesa Black Angus" data-en="Black Angus burger">Hamburguesa Black Angus</h3><p class="allergens" data-es="Lácteos, soja, gluten" data-en="Dairy, soy, gluten">Lácteos, soja, gluten</p></div><span class="price">17,50 €</span></article>
+        </section>
+
+        <section class="menu-group" data-cat="sushi">
+          <h2>Sushi</h2>
+          <article class="dish"><div><h3 data-es="Nigiri de gamba roja, 2 uds." data-en="Red prawn nigiri, 2 pcs">Nigiri de gamba roja, 2 uds.</h3><p class="allergens" data-es="Marisco, soja" data-en="Shellfish, soy">Marisco, soja</p></div><span class="price">14 €</span></article>
+          <article class="dish"><div><h3 data-es="Nigiri de atún Gadira, 2 uds." data-en="Gadira tuna nigiri, 2 pcs">Nigiri de atún Gadira, 2 uds.</h3><p class="allergens" data-es="Pescado" data-en="Fish">Pescado</p></div><span class="price">9 €</span></article>
+          <article class="dish"><div><h3 data-es="Nigiri de salmón con huevas, 2 uds." data-en="Salmon nigiri with roe, 2 pcs">Nigiri de salmón con huevas, 2 uds.</h3><p class="allergens" data-es="Pescado" data-en="Fish">Pescado</p></div><span class="price">8 €</span></article>
+          <article class="dish"><div><h3 data-es="Sashimi de atún, 6 uds." data-en="Tuna sashimi, 6 pcs">Sashimi de atún, 6 uds.</h3><p class="allergens" data-es="Pescado" data-en="Fish">Pescado</p></div><span class="price">21 €</span></article>
+          <article class="dish"><div><h3 data-es="Sashimi de salmón, 6 uds." data-en="Salmon sashimi, 6 pcs">Sashimi de salmón, 6 uds.</h3><p class="allergens" data-es="Pescado" data-en="Fish">Pescado</p></div><span class="price">16 €</span></article>
+          <article class="dish"><div><h3 data-es="Hosomaki de atún e ikura, 6 uds." data-en="Tuna and ikura hosomaki, 6 pcs">Hosomaki de atún e ikura, 6 uds.</h3><p class="allergens" data-es="Pescado" data-en="Fish">Pescado</p></div><span class="price">16 €</span></article>
+          <article class="dish"><div><h3 data-es="Hosomaki de aguacate, 6 uds." data-en="Avocado hosomaki, 6 pcs">Hosomaki de aguacate, 6 uds.</h3></div><span class="price">13 €</span></article>
+          <article class="dish"><div><h3 data-es="Bandeja de uramaki, 24 uds." data-en="Uramaki tray, 24 pcs">Bandeja de uramaki, 24 uds.</h3></div><span class="price">38 €</span></article>
+        </section>
+
+        <section class="menu-group" data-cat="wok">
+          <h2 data-es="Wok" data-en="Wok">Wok</h2>
+          <article class="dish"><div><h3 data-es="Noodles con gambas" data-en="Prawn noodles">Noodles con gambas</h3><p class="allergens" data-es="Gluten, marisco, huevo" data-en="Gluten, shellfish, egg">Gluten, marisco, huevo</p></div><span class="price">14 €</span></article>
+          <article class="dish"><div><h3 data-es="Noodles vegetales" data-en="Vegetable noodles">Noodles vegetales</h3><p class="allergens">Gluten</p></div><span class="price">12 €</span></article>
+          <article class="dish"><div><h3 data-es="Arroz con pollo y gambas" data-en="Rice with chicken and prawns">Arroz con pollo y gambas</h3><p class="allergens" data-es="Huevo, marisco" data-en="Egg, shellfish">Huevo, marisco</p></div><span class="price">15 €</span></article>
+        </section>
+
+        <p class="fine" data-es="Carta de vinos en sala. IVA incluido en los precios publicados por el restaurante. Reserva tu mesa y sigue la noche en el club." data-en="Wine list in the room. VAT included in the prices published by the restaurant. Book a table and continue the night in the club.">Carta de vinos en sala. IVA incluido en los precios publicados por el restaurante. Reserva tu mesa y sigue la noche en el club.</p>
+        <div class="stack-btns">
+          <a class="btn btn--ink" href="restaurant.html#reserva" data-es="Reservar mesa" data-en="Book a table">Reservar mesa</a>
+          <a class="btn btn--line" href="club.html" data-es="Seguir en el club" data-en="Continue in the club">Seguir en el club</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-base">
+      <p>© 2026 Tropical Fusion · Salou</p>
+      <p><a href="restaurant.html" data-es="Restaurante" data-en="Restaurant">Restaurante</a> · <a href="index.html">Tropical</a></p>
+    </div>
+  </footer>
+  <noscript><style>html.i18n-wait body{visibility:visible}</style></noscript>
+  <script src="js/main.js"></script>
+</body>
+</html>

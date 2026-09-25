@@ -1,0 +1,9 @@
+{
+  "name": "Tropical Salou",
+  "short_name": "Tropical",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#090807",
+  "theme_color": "#090807",
+  "icons": [{ "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

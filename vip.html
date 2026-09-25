@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VIP — Tropical Salou</title>
+  <meta name="description" content="Mesas VIP en Tropical Salou: terraza sunset, sala, Sky y anfitrión. Reserva por WhatsApp.">
+  <meta name="theme-color" content="#090807">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,620;1,9..144,460;1,9..144,560&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function () {
+      try {
+        var l = localStorage.getItem("tropical-lang");
+        if (!l) l = (navigator.language || "").toLowerCase().indexOf("en") === 0 ? "en" : "es";
+        document.documentElement.lang = l;
+        document.documentElement.dataset.lang = l;
+        if (l === "en") document.documentElement.classList.add("i18n-wait");
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-page="vip" data-es-title="VIP — Tropical Salou" data-en-title="VIP — Tropical Salou">
+  <a class="skip" href="#main" data-es="Saltar al contenido" data-en="Skip to content">Saltar al contenido</a>
+  <header class="site-header" data-header>
+    <a class="logo" href="index.html" aria-label="Tropical Salou">
+      <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="1.1"/><path d="M24 36V26" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M14 24c2-6 6-8 10-8s8 2 10 8c-3-2-6-3-10-3s-7 1-10 3z" fill="currentColor"/><circle cx="33" cy="15" r="1.2" fill="currentColor"/></svg>
+      <span class="logo__lockup"><span class="logo__word">Tropical</span><span class="logo__place">Salou</span></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="events.html" data-es="Eventos" data-en="Events">Eventos</a>
+      <a href="club.html" data-es="El Club" data-en="The Club">El Club</a>
+      <a href="restaurant.html" data-es="Restaurante" data-en="Restaurant">Restaurante</a>
+      <a href="gallery.html" data-es="Galería" data-en="Gallery">Galería</a>
+      <a href="vip.html" aria-current="page">VIP</a>
+      <a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a>
+    </nav>
+    <div class="header__actions">
+      <button type="button" class="icon-btn" id="open-bookings" aria-label="Mis solicitudes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 4.5h12v16l-6-3.2L6 20.5v-16z"/></svg><span class="badge" id="bookings-count" hidden>0</span></button>
+      <button type="button" class="lang-switch" id="lang-switch">EN</button>
+      <a class="btn btn--gold btn--small" href="#reservar" data-es="Reservar" data-en="Book">Reservar</a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-panel" aria-label="Menú"><span></span></button>
+    </div>
+  </header>
+  <div class="nav-panel" id="nav-panel" inert>
+    <a href="events.html" data-es="Eventos" data-en="Events">Eventos</a>
+    <a href="club.html" data-es="El Club" data-en="The Club">El Club</a>
+    <a href="restaurant.html" data-es="Restaurante" data-en="Restaurant">Restaurante</a>
+    <a href="gallery.html" data-es="Galería" data-en="Gallery">Galería</a>
+    <a href="vip.html" aria-current="page">VIP</a>
+    <a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a>
+  </div>
+
+  <main id="main">
+    <header class="page-hero">
+      <div class="page-hero__media"><img src="assets/images/vip.jpg" alt="Reservado VIP" data-es-alt="Reservado VIP" data-en-alt="VIP booth"></div>
+      <div class="wrap page-hero__content">
+        <p class="kicker">+34 645 72 74 27</p>
+        <h1 class="display"><span data-es="Mesas" data-en="Tables">Mesas</span> <em>VIP</em></h1>
+        <p class="lede" data-es="Un rincón con nombre, botella y alguien que os conoce. Los importes son desde y se confirman con el equipo." data-en="A corner with your name, a bottle, and someone who knows you. Figures are from-prices and confirmed by the team.">Un rincón con nombre, botella y alguien que os conoce. Los importes son desde y se confirman con el equipo.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="packages">
+          <article class="package">
+            <p class="kicker">Sunset</p>
+            <h3 data-es="Terraza" data-en="Terrace">Terraza</h3>
+            <p class="price" data-es="desde 180 €" data-en="from €180">desde 180 €</p>
+            <ul>
+              <li data-es="4 personas" data-en="4 guests">4 personas</li>
+              <li data-es="1 botella" data-en="1 bottle">1 botella</li>
+              <li>20:00 – 23:00</li>
+              <li data-es="Terraza" data-en="Terrace">Terraza</li>
+            </ul>
+            <a class="btn btn--ghost btn--small" href="#reservar" data-es="Pedir esta" data-en="Request this">Pedir esta</a>
+          </article>
+          <article class="package">
+            <p class="kicker">Club</p>
+            <h3 data-es="Sala" data-en="Room">Sala</h3>
+            <p class="price" data-es="desde 320 €" data-en="from €320">desde 320 €</p>
+            <ul>
+              <li data-es="6 personas" data-en="6 guests">6 personas</li>
+              <li data-es="1 botella premium" data-en="1 premium bottle">1 botella premium</li>
+              <li data-es="Sala principal o Fusion" data-en="Main room or Fusion">Sala principal o Fusion</li>
+              <li data-es="Anfitrión" data-en="Host">Anfitrión</li>
+            </ul>
+            <a class="btn btn--gold btn--small" href="#reservar" data-es="Pedir esta" data-en="Request this">Pedir esta</a>
+          </article>
+          <article class="package">
+            <p class="kicker">Sky</p>
+            <h3>Sky</h3>
+            <p class="price" data-es="desde 520 €" data-en="from €520">desde 520 €</p>
+            <ul>
+              <li data-es="8 personas" data-en="8 guests">8 personas</li>
+              <li data-es="2 botellas" data-en="2 bottles">2 botellas</li>
+              <li>Sky Garden</li>
+              <li data-es="Llegada prioritaria" data-en="Priority arrival">Llegada prioritaria</li>
+            </ul>
+            <a class="btn btn--ghost btn--small" href="#reservar" data-es="Pedir esta" data-en="Request this">Pedir esta</a>
+          </article>
+          <article class="package">
+            <p class="kicker">Private</p>
+            <h3 data-es="Anfitrión" data-en="Host">Anfitrión</h3>
+            <p class="price" data-es="desde 900 €" data-en="from €900">desde 900 €</p>
+            <ul>
+              <li data-es="Grupo a medida" data-en="Custom group">Grupo a medida</li>
+              <li data-es="Booth completo" data-en="Full booth">Booth completo</li>
+              <li data-es="Host dedicado" data-en="Dedicated host">Host dedicado</li>
+              <li data-es="Celebraciones" data-en="Celebrations">Celebraciones</li>
+            </ul>
+            <a class="btn btn--ghost btn--small" href="#reservar" data-es="Pedir esta" data-en="Request this">Pedir esta</a>
+          </article>
+        </div>
+        <p class="fine" data-es="Precios orientativos de temporada, sujetos a la noche, la botella y la disponibilidad. No se cobra en esta web." data-en="Seasonal guide prices, subject to the night, the bottle and availability. Nothing is charged on this website.">Precios orientativos de temporada, sujetos a la noche, la botella y la disponibilidad. No se cobra en esta web.</p>
+      </div>
+    </section>
+
+    <section class="section section--sand" id="reservar">
+      <div class="wrap contact-grid">
+        <div>
+          <p class="kicker">VIP</p>
+          <h2 class="display" style="font-size:clamp(2.2rem,4vw,3.5rem)"><span data-es="Escribe" data-en="Write to">Escribe</span> <em data-es="al equipo" data-en="the team">al equipo</em></h2>
+          <p class="lede" data-es="WhatsApp directo del reservado. Si prefieres llamar, el número es el mismo." data-en="Direct WhatsApp for tables. If you would rather call, it is the same number.">WhatsApp directo del reservado. Si prefieres llamar, el número es el mismo.</p>
+          <p><a class="link-arrow" href="tel:+34645727427">+34 645 72 74 27</a></p>
+        </div>
+        <div>
+          <form class="form" id="vip-form">
+            <label class="field"><span data-es="Pack" data-en="Package">Pack</span>
+              <select name="package">
+                <option>Sunset Terraza</option>
+                <option selected>Club Sala</option>
+                <option>Sky</option>
+                <option>Private Host</option>
+              </select>
+            </label>
+            <div class="field-row">
+              <label class="field"><span data-es="Fecha" data-en="Date">Fecha</span><input name="date" type="date" required></label>
+              <label class="field"><span data-es="Hora" data-en="Time">Hora</span>
+                <select name="time"><option>21:00</option><option>22:00</option><option selected>23:00</option><option>00:00</option></select>
+              </label>
+            </div>
+            <label class="field"><span data-es="Personas" data-en="Guests">Personas</span>
+              <select name="guests"><option>4</option><option>6</option><option>8</option><option>10</option><option>12</option></select>
+            </label>
+            <label class="field"><span data-es="Nombre" data-en="Name">Nombre</span><input name="name" required autocomplete="name"></label>
+            <div class="field-row">
+              <label class="field"><span>Email</span><input name="email" type="email" required autocomplete="email"></label>
+              <label class="field"><span data-es="Teléfono" data-en="Phone">Teléfono</span><input name="phone" type="tel" required autocomplete="tel"></label>
+            </div>
+            <label class="field"><span data-es="Notas" data-en="Notes">Notas</span><textarea name="notes" data-es-placeholder="Celebración, botella, llegada…" data-en-placeholder="Celebration, bottle, arrival…" placeholder="Celebración, botella, llegada…"></textarea></label>
+            <div class="hp" aria-hidden="true"><label>Company<input name="company" tabindex="-1" autocomplete="off"></label></div>
+            <p class="form-error" hidden></p>
+            <button class="btn btn--gold" type="submit" data-es="Pedir mesa VIP por WhatsApp" data-en="Request a VIP table on WhatsApp">Pedir mesa VIP por WhatsApp</button>
+          </form>
+          <div class="form-success" hidden></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-base">
+      <p>© 2026 Tropical Salou · VIP +34 645 72 74 27 · +18</p>
+      <p><a href="events.html">Tickets</a> · <a href="index.html">Tropical</a></p>
+    </div>
+  </footer>
+  <noscript><style>html.i18n-wait body{visibility:visible}</style></noscript>
+  <script src="js/main.js"></script>
+</body>
+</html>

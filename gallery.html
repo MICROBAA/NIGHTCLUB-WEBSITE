@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galería — Tropical Salou</title>
+  <meta name="description" content="Imágenes de Tropical Salou: salas, terraza, white party, VIP y Tropical Fusion.">
+  <meta name="theme-color" content="#090807">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,620;1,9..144,460;1,9..144,560&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function () {
+      try {
+        var l = localStorage.getItem("tropical-lang");
+        if (!l) l = (navigator.language || "").toLowerCase().indexOf("en") === 0 ? "en" : "es";
+        document.documentElement.lang = l;
+        document.documentElement.dataset.lang = l;
+        if (l === "en") document.documentElement.classList.add("i18n-wait");
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-page="gallery" data-es-title="Galería — Tropical Salou" data-en-title="Gallery — Tropical Salou">
+  <a class="skip" href="#main" data-es="Saltar al contenido" data-en="Skip to content">Saltar al contenido</a>
+  <header class="site-header" data-header>
+    <a class="logo" href="index.html" aria-label="Tropical Salou">
+      <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="1.1"/><path d="M24 36V26" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M24 26c-7-2-11 0-12 3 4-1 8-1 12-3 4 2 8 2 12 3-1-3-5-5-12-3z" fill="currentColor"/><circle cx="33" cy="15" r="1.2" fill="currentColor"/></svg>
+      <span class="logo__lockup"><span class="logo__word">Tropical</span><span class="logo__place">Salou</span></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="events.html" data-es="Eventos" data-en="Events">Eventos</a>
+      <a href="club.html" data-es="El Club" data-en="The Club">El Club</a>
+      <a href="restaurant.html" data-es="Restaurante" data-en="Restaurant">Restaurante</a>
+      <a href="gallery.html" data-es="Galería" data-en="Gallery" aria-current="page">Galería</a>
+      <a href="vip.html">VIP</a>
+      <a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a>
+    </nav>
+    <div class="header__actions">
+      <button type="button" class="icon-btn" id="open-bookings" aria-label="Mis solicitudes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 4.5h12v16l-6-3.2L6 20.5v-16z"/></svg><span class="badge" id="bookings-count" hidden>0</span></button>
+      <button type="button" class="lang-switch" id="lang-switch">EN</button>
+      <a class="btn btn--gold btn--small" href="events.html">Tickets</a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-panel" aria-label="Menú"><span></span></button>
+    </div>
+  </header>
+  <div class="nav-panel" id="nav-panel" inert>
+    <a href="events.html" data-es="Eventos" data-en="Events">Eventos</a>
+    <a href="club.html" data-es="El Club" data-en="The Club">El Club</a>
+    <a href="restaurant.html" data-es="Restaurante" data-en="Restaurant">Restaurante</a>
+    <a href="gallery.html" aria-current="page" data-es="Galería" data-en="Gallery">Galería</a>
+    <a href="vip.html">VIP</a>
+    <a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a>
+  </div>
+
+  <main id="main">
+    <header class="page-hero">
+      <div class="page-hero__media"><img src="assets/images/exterior.jpg" alt="Entrada de noche" data-es-alt="Entrada de noche" data-en-alt="The entrance at night"></div>
+      <div class="wrap page-hero__content">
+        <p class="kicker">Salou</p>
+        <h1 class="display"><span data-es="La noche," data-en="The night,">La noche,</span> <em data-es="en imágenes" data-en="in pictures">en imágenes</em></h1>
+        <p class="lede" data-es="Pulsa una foto. El resto está en Instagram." data-en="Open a photo. The rest lives on Instagram.">Pulsa una foto. El resto está en Instagram.</p>
+        <a class="link-arrow" href="https://www.instagram.com/tropical.salou/" target="_blank" rel="noopener">@tropical.salou</a>
+      </div>
+    </header>
+    <section class="section">
+      <div class="wrap-wide masonry">
+        <button class="shot" type="button" data-full="assets/images/hero.jpg">
+          <img src="assets/images/hero.jpg" alt="Sala principal" data-es-alt="Sala principal" data-en-alt="Main room">
+          <span class="cap" data-es="Sala principal" data-en="Main room">Sala principal</span>
+        </button>
+        <button class="shot" type="button" data-full="assets/images/white.jpg">
+          <img src="assets/images/white.jpg" alt="White party" data-es-alt="White party" data-en-alt="White party">
+          <span class="cap">Morena · White party</span>
+        </button>
+        <button class="shot" type="button" data-full="assets/images/terrace.jpg">
+          <img src="assets/images/terrace.jpg" alt="Terraza" data-es-alt="Terraza" data-en-alt="Terrace">
+          <span class="cap" data-es="Terraza" data-en="Terrace">Terraza</span>
+        </button>
+        <button class="shot" type="button" data-full="assets/images/dj.jpg">
+          <img src="assets/images/dj.jpg" alt="Cabina" data-es-alt="Cabina" data-en-alt="DJ booth">
+          <span class="cap" data-es="Cabina" data-en="Booth">Cabina</span>
+        </button>
+        <button class="shot" type="button" data-full="assets/images/vip.jpg">
+          <img src="assets/images/vip.jpg" alt="Mesa VIP" data-es-alt="Mesa VIP" data-en-alt="VIP table">
+          <span class="cap">VIP</span>
+        </button>
+        <button class="shot" type="button" data-full="assets/images/restaurant.jpg">
+          <img src="assets/images/restaurant.jpg" alt="Tropical Fusion" data-es-alt="Tropical Fusion" data-en-alt="Tropical Fusion">
+          <span class="cap">Tropical Fusion</span>
+        </button>
+        <button class="shot" type="button" data-full="assets/images/sushi.jpg">
+          <img src="assets/images/sushi.jpg" alt="Sushi" data-es-alt="Sushi" data-en-alt="Sushi">
+          <span class="cap">Sushi</span>
+        </button>
+        <button class="shot" type="button" data-full="assets/images/dance.jpg">
+          <img src="assets/images/dance.jpg" alt="Pista" data-es-alt="Pista" data-en-alt="Dancefloor">
+          <span class="cap" data-es="Pista" data-en="Dancefloor">Pista</span>
+        </button>
+        <button class="shot" type="button" data-full="assets/images/exterior.jpg">
+          <img src="assets/images/exterior.jpg" alt="Entrada" data-es-alt="Entrada" data-en-alt="Entrance">
+          <span class="cap" data-es="Buïgas, 39" data-en="Buïgas, 39">Buïgas, 39</span>
+        </button>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-base">
+      <p>© 2026 Tropical Salou · +18</p>
+      <p><a href="https://www.instagram.com/tropical.salou/" target="_blank" rel="noopener">Instagram</a> · <a href="index.html">Inicio</a></p>
+    </div>
+  </footer>
+  <noscript><style>html.i18n-wait body{visibility:visible}</style></noscript>
+  <script src="js/main.js"></script>
+</body>
+</html>

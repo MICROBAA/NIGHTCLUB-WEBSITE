@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tropical Salou — Club · Disco · Restaurant</title>
+  <meta name="description" content="Tropical Salou: disco, four rooms, terrace and Tropical Fusion restaurant on the Costa Daurada. Club, disco y restaurante en Salou.">
+  <meta property="og:title" content="Tropical Salou — Club · Disco · Restaurant">
+  <meta property="og:description" content="Four rooms, one terrace, and the longest night on the Costa Daurada.">
+  <meta property="og:image" content="assets/images/hero.jpg">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#090807">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" as="image" href="assets/images/hero.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,620;1,9..144,460;1,9..144,560&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function () {
+      try {
+        var l = localStorage.getItem("tropical-lang");
+        if (!l) l = (navigator.language || "").toLowerCase().indexOf("en") === 0 ? "en" : "es";
+        document.documentElement.lang = l;
+        document.documentElement.dataset.lang = l;
+        if (l === "en") document.documentElement.classList.add("i18n-wait");
+      } catch (e) {}
+    })();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["NightClub", "Restaurant"],
+    "name": "Tropical Salou",
+    "image": "assets/images/hero.jpg",
+    "telephone": "+34695117539",
+    "email": "direccion@tropicalsalou.com",
+    "servesCuisine": ["Mediterranean", "Japanese"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Avinguda de Carles Buïgas, 39",
+      "addressLocality": "Salou",
+      "postalCode": "43840",
+      "addressRegion": "Tarragona",
+      "addressCountry": "ES"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 41.071977, "longitude": 1.149595 },
+    "sameAs": [
+      "https://www.instagram.com/tropical.salou/",
+      "https://www.facebook.com/tropicalsalou/"
+    ]
+  }
+  </script>
+</head>
+<body data-page="home" data-es-title="Tropical Salou — Club · Disco · Restaurant" data-en-title="Tropical Salou — Club · Disco · Restaurant">
+  <a class="skip" href="#main" data-es="Saltar al contenido" data-en="Skip to content">Saltar al contenido</a>
+  <header class="site-header" data-header>
+    <a class="logo" href="index.html" aria-label="Tropical Salou">
+      <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="1.1"/><path d="M24 36.2c.55-3.1.35-6.2 0-9.1" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M24 27c-1.1-3.8-4.4-6.2-8.8-6.8 4 1.1 6.6 3.2 7.8 6.2" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round"/><path d="M24 27c1.1-3.8 4.4-6.2 8.8-6.8-4 1.1-6.6 3.2-7.8 6.2" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round"/><path d="M24 26.4c-2.2-3.1-6-4.2-9.8-3.1 3.5 1.7 5.8 3.8 7.1 6.5" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round"/><path d="M24 26.4c2.2-3.1 6-4.2 9.8-3.1-3.5 1.7-5.8 3.8 7.1 6.5" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round"/><path d="M24 25.2V16.8" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round"/><circle cx="33.2" cy="15.2" r="1.25" fill="currentColor"/></svg>
+      <span class="logo__lockup"><span class="logo__word">Tropical</span><span class="logo__place">Salou</span></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="events.html" data-es="Eventos" data-en="Events">Eventos</a>
+      <a href="club.html" data-es="El Club" data-en="The Club">El Club</a>
+      <a href="restaurant.html" data-es="Restaurante" data-en="Restaurant">Restaurante</a>
+      <a href="gallery.html" data-es="Galería" data-en="Gallery">Galería</a>
+      <a href="vip.html">VIP</a>
+      <a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a>
+    </nav>
+    <div class="header__actions">
+      <button type="button" class="icon-btn" id="open-bookings" data-es-aria="Mis solicitudes" data-en-aria="My requests" aria-label="Mis solicitudes">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 4.5h12v16l-6-3.2L6 20.5v-16z"/></svg>
+        <span class="badge" id="bookings-count" hidden>0</span>
+      </button>
+      <button type="button" class="lang-switch" id="lang-switch">EN</button>
+      <a class="btn btn--gold btn--small" href="events.html">Tickets</a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-panel" data-es-aria="Menú" data-en-aria="Menu" aria-label="Menú"><span></span></button>
+    </div>
+  </header>
+  <div class="nav-panel" id="nav-panel" inert>
+    <a href="events.html" data-es="Eventos" data-en="Events">Eventos</a>
+    <a href="club.html" data-es="El Club" data-en="The Club">El Club</a>
+    <a href="restaurant.html" data-es="Restaurante" data-en="Restaurant">Restaurante</a>
+    <a href="gallery.html" data-es="Galería" data-en="Gallery">Galería</a>
+    <a href="vip.html">VIP</a>
+    <a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a>
+    <a href="menu.html" data-es="Carta" data-en="Menu">Carta</a>
+    <div class="nav-panel__meta"><a href="events.html">Tickets</a><a href="tel:+34695117539">+34 695 117 539</a></div>
+  </div>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero__media">
+        <img src="assets/images/hero.jpg" alt="Sala principal de Tropical, palmeras y pista llena" data-es-alt="Sala principal de Tropical, palmeras y pista llena" data-en-alt="Tropical main room, palms and a full dancefloor">
+        <div class="hero__shade"></div>
+      </div>
+      <div class="hero__grid">
+        <div>
+          <p class="status" data-status="club"><i></i><span data-es="Costa Daurada" data-en="Costa Daurada">Costa Daurada</span></p>
+          <h1 class="hero__brand">Tropical</h1>
+          <p class="hero__tag">Club · Disco · Restaurant</p>
+          <p class="hero__lead" data-es="Cuatro salas, una terraza y la noche más larga de Salou. Del cóctel al último tema." data-en="Four rooms, one terrace, and the longest night in Salou. From the first cocktail to the last record.">Cuatro salas, una terraza y la noche más larga de Salou. Del cóctel al último tema.</p>
+          <div class="hero__cta">
+            <a class="btn btn--gold" href="events.html">Tickets</a>
+            <a class="btn btn--ghost" href="club.html" data-es="El club" data-en="The club">El club</a>
+          </div>
+        </div>
+        <aside class="next-card">
+          <p class="kicker" data-es="Próxima noche" data-en="Next night">Próxima noche</p>
+          <p class="fine" style="margin:0">25 Sep · 22:00</p>
+          <h2>Bye Bye Summer</h2>
+          <p class="countdown" id="countdown" data-target="2026-09-25T22:00:00+02:00">—</p>
+          <a class="btn btn--gold" href="events.html#bye-bye-summer" data-ticket="bye-bye-summer">Tickets</a>
+        </aside>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Bye Bye Summer</span><span>The Show</span><span>Cachondeo en Las Vegas</span><span>Don't Tell Your Boyfriend</span><span>Free Love</span><span>Morena</span><span>This is Tropical</span><span>Coraje</span><span>Dale Don Dale</span>
+        <span>Bye Bye Summer</span><span>The Show</span><span>Cachondeo en Las Vegas</span><span>Don't Tell Your Boyfriend</span><span>Free Love</span><span>Morena</span><span>This is Tropical</span><span>Coraje</span><span>Dale Don Dale</span>
+      </div>
+    </div>
+
+    <section class="section" id="eventos">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <div>
+            <p class="kicker" data-es="Agenda" data-en="Diary">Agenda</p>
+            <h2 class="display"><span data-es="Próximos" data-en="Upcoming">Próximos</span> <em data-es="eventos" data-en="events">eventos</em></h2>
+          </div>
+          <a class="link-arrow" href="events.html" data-es="Ver todos" data-en="See all">Ver todos</a>
+        </div>
+        <div class="home-events">
+          <article class="feature-event reveal" id="bye-bye-summer" data-when="25 Sep · 22:00" data-date="2026-09-25">
+            <a class="feature-event__media" href="events.html#bye-bye-summer">
+              <img src="assets/images/dance.jpg" alt="Pista de Bye Bye Summer" data-es-alt="Pista de Bye Bye Summer" data-en-alt="Bye Bye Summer dancefloor">
+            </a>
+            <div class="feature-event__body">
+              <div class="date-stack"><strong>25</strong><span>Sep</span></div>
+              <div>
+                <h3><a href="events.html#bye-bye-summer">Bye Bye Summer</a></h3>
+                <p>22:00 · Latin · Commercial</p>
+              </div>
+              <a class="btn btn--gold btn--small" href="events.html#bye-bye-summer" data-ticket="bye-bye-summer">Tickets</a>
+            </div>
+          </article>
+          <div class="event-rows reveal">
+            <article class="event-card" id="the-show" data-when="26 Sep · 22:00" data-date="2026-09-26">
+              <img class="event-card__img pos-top" src="assets/images/dj.jpg" alt="">
+              <div class="date-stack"><strong>26</strong><span>Sep</span></div>
+              <div>
+                <h3><a href="events.html#the-show">The Show</a></h3>
+                <p class="meta">22:00 · Shows</p>
+              </div>
+              <a class="btn btn--ghost btn--small" href="events.html#the-show" data-ticket="the-show">Tickets</a>
+            </article>
+            <article class="event-card" id="cachondeo" data-when="27 Sep · 22:00" data-date="2026-09-27">
+              <img class="event-card__img" src="assets/images/vip.jpg" alt="">
+              <div class="date-stack"><strong>27</strong><span>Sep</span></div>
+              <div>
+                <h3><a href="events.html#cachondeo">Cachondeo en Las Vegas</a></h3>
+                <p class="meta">22:00 · Glam</p>
+              </div>
+              <a class="btn btn--ghost btn--small" href="events.html#cachondeo" data-ticket="cachondeo">Tickets</a>
+            </article>
+            <article class="event-card" id="boyfriend" data-when="28 Sep · 22:00" data-date="2026-09-28">
+              <img class="event-card__img pos-left" src="assets/images/hero.jpg" alt="">
+              <div class="date-stack"><strong>28</strong><span>Sep</span></div>
+              <div>
+                <h3><a href="events.html#boyfriend">Don't Tell Your Boyfriend</a></h3>
+                <p class="meta">22:00 · Commercial</p>
+              </div>
+              <a class="btn btn--ghost btn--small" href="events.html#boyfriend" data-ticket="boyfriend">Tickets</a>
+            </article>
+            <article class="event-card" id="free-love" data-when="29 Sep · 22:00" data-date="2026-09-29">
+              <img class="event-card__img" src="assets/images/terrace.jpg" alt="">
+              <div class="date-stack"><strong>29</strong><span>Sep</span></div>
+              <div>
+                <h3><a href="events.html#free-love">Free Love</a></h3>
+                <p class="meta">22:00 · House · Latin</p>
+              </div>
+              <a class="btn btn--ghost btn--small" href="events.html#free-love" data-ticket="free-love">Tickets</a>
+            </article>
+            <article class="event-card" id="morena" data-when="30 Sep · 22:00" data-date="2026-09-30">
+              <img class="event-card__img" src="assets/images/white.jpg" alt="">
+              <div class="date-stack"><strong>30</strong><span>Sep</span></div>
+              <div>
+                <h3><a href="events.html#morena">Morena</a></h3>
+                <p class="meta" data-es="22:00 · White party" data-en="22:00 · White party">22:00 · White party</p>
+              </div>
+              <a class="btn btn--ghost btn--small" href="events.html#morena" data-ticket="morena">Tickets</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--sand">
+      <div class="wrap split">
+        <div class="split__copy reveal">
+          <p class="kicker">Salou</p>
+          <h2 class="display"><span data-es="El pulso de la" data-en="The pulse of the">El pulso de la</span> <em>Costa Daurada</em></h2>
+          <div class="prose">
+            <p data-es="Tropical es la noche de Salou: palmeras, luces y una pista que no pide permiso. Reggaetón, latin, house y los hits que mueven la costa, repartidos en cuatro salas con carácter propio." data-en="Tropical is Salou after dark: palms, light, and a dancefloor that does not ask permission. Reggaeton, latin, house and the records that move the coast, split across four rooms with a mind of their own.">Tropical es la noche de Salou: palmeras, luces y una pista que no pide permiso. Reggaetón, latin, house y los hits que mueven la costa, repartidos en cuatro salas con carácter propio.</p>
+            <p data-es="En la terraza, el cóctel se alarga y la shisha encuentra su rincón. Abajo, Tropical Fusion enciende la mesa — mediterráneo y Japón en el mismo fuego — y la cena sigue siendo fiesta." data-en="On the terrace the cocktail lingers and the shisha finds its corner. Downstairs, Tropical Fusion lights the table — Mediterranean and Japan on the same fire — and dinner is still a party.">En la terraza, el cóctel se alarga y la shisha encuentra su rincón. Abajo, Tropical Fusion enciende la mesa — mediterráneo y Japón en el mismo fuego — y la cena sigue siendo fiesta.</p>
+          </div>
+          <div class="stack-btns">
+            <a class="btn btn--gold" href="club.html" data-es="Entrar al club" data-en="Enter the club">Entrar al club</a>
+            <a class="btn btn--ghost" href="restaurant.html" data-es="Reservar mesa" data-en="Book a table">Reservar mesa</a>
+          </div>
+        </div>
+        <div class="split__media reveal">
+          <img src="assets/images/exterior.jpg" alt="Entrada de Tropical entre palmeras y buganvilla" data-es-alt="Entrada de Tropical entre palmeras y buganvilla" data-en-alt="Tropical entrance among palms and bougainvillea">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="salas">
+      <div class="wrap-wide">
+        <div class="section__head reveal">
+          <div>
+            <p class="kicker" data-es="Cuatro salas" data-en="Four rooms">Cuatro salas</p>
+            <h2 class="display"><span data-es="Elige tu" data-en="Choose your">Elige tu</span> <em data-es="ritmo" data-en="rhythm">ritmo</em></h2>
+          </div>
+          <a class="link-arrow" href="club.html" data-es="Ver el club" data-en="See the club">Ver el club</a>
+        </div>
+        <div class="room-scroller">
+          <a class="room-card" href="club.html#main">
+            <img src="assets/images/hero.jpg" alt="">
+            <div class="room-card__body"><span class="room-card__index">01</span><h3 data-es="Principal" data-en="Main room">Principal</h3><p data-es="Latin, reggaetón y los hits de la costa." data-en="Latin, reggaeton and the coast’s hits.">Latin, reggaetón y los hits de la costa.</p></div>
+          </a>
+          <a class="room-card" href="club.html#house">
+            <img class="pos-top" src="assets/images/dj.jpg" alt="">
+            <div class="room-card__body"><span class="room-card__index">02</span><h3>House</h3><p data-es="Electrónica más cerca del bombo." data-en="Electronic, closer to the kick.">Electrónica más cerca del bombo.</p></div>
+          </a>
+          <a class="room-card" href="club.html#sky">
+            <img src="assets/images/dance.jpg" alt="">
+            <div class="room-card__body"><span class="room-card__index">03</span><h3>Sky Garden</h3><p data-es="Arriba, con aire de mirador." data-en="Upstairs, with a lookout feel.">Arriba, con aire de mirador.</p></div>
+          </a>
+          <a class="room-card" href="club.html#fusion">
+            <img src="assets/images/vip.jpg" alt="">
+            <div class="room-card__body"><span class="room-card__index">04</span><h3>Fusion</h3><p data-es="La sala glam que sale de la cena." data-en="The glam room that starts at dinner.">La sala glam que sale de la cena.</p></div>
+          </a>
+          <a class="room-card" href="club.html#terraza">
+            <img src="assets/images/terrace.jpg" alt="">
+            <div class="room-card__body"><span class="room-card__index">05</span><h3 data-es="Terraza" data-en="Terrace">Terraza</h3><p data-es="Cócteles, shisha y la noche abierta." data-en="Cocktails, shisha and the open night.">Cócteles, shisha y la noche abierta.</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section--tight">
+      <div class="wrap stats">
+        <div class="stat"><strong>4</strong><span data-es="Salas con estilo propio" data-en="Rooms, each with a sound">Salas con estilo propio</span></div>
+        <div class="stat"><strong>06</strong><span data-es="Cierre viernes y sábado" data-en="Friday and Saturday close">Cierre viernes y sábado</span></div>
+        <div class="stat"><strong>18</strong><span data-es="Apertura de terraza y cocina" data-en="Terrace and kitchen open">Apertura de terraza y cocina</span></div>
+        <div class="stat"><strong>+18</strong><span data-es="Con documento. Sin excepción." data-en="ID required. No exceptions.">Con documento. Sin excepción.</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="quote reveal"><span data-es="Palmeras, luces" data-en="Palms, lights">Palmeras, luces</span> <em data-es="y una pista que no pide permiso." data-en="and a floor that doesn’t ask.">y una pista que no pide permiso.</em></p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="wrap-wide gallery-strip reveal">
+        <a href="gallery.html"><img src="assets/images/hero.jpg" alt=""></a>
+        <a href="gallery.html"><img class="pos-top" src="assets/images/white.jpg" alt=""></a>
+        <a href="gallery.html"><img src="assets/images/terrace.jpg" alt=""></a>
+      </div>
+      <div class="wrap" style="margin-top:1rem">
+        <a class="link-arrow" href="gallery.html" data-es="Galería" data-en="Gallery">Galería</a>
+      </div>
+    </section>
+
+    <section class="section section--ivory">
+      <p class="watermark" aria-hidden="true">Fusion</p>
+      <div class="wrap split">
+        <div class="split__media reveal">
+          <img src="assets/images/restaurant.jpg" alt="Comedor de Tropical Fusion al anochecer" data-es-alt="Comedor de Tropical Fusion al anochecer" data-en-alt="Tropical Fusion dining room at night">
+        </div>
+        <div class="split__copy reveal">
+          <p class="kicker">Tropical Fusion</p>
+          <h2 class="display"><span data-es="Cena," data-en="Dinner,">Cena,</span> <em data-es="luego pista" data-en="then the floor">luego pista</em></h2>
+          <div class="prose">
+            <p data-es="Mediterráneo y Japón en la misma carta: gamba roja de Tarragona, sushi, arroces al Josper, carnes a la brasa. Interior y terraza, y noches con show cuando la cena quiere espectáculo." data-en="Mediterranean and Japan on one menu: Tarragona red prawns, sushi, Josper rice, grilled meat. Dining room and terrace, and nights with a show when dinner wants a stage.">Mediterráneo y Japón en la misma carta: gamba roja de Tarragona, sushi, arroces al Josper, carnes a la brasa. Interior y terraza, y noches con show cuando la cena quiere espectáculo.</p>
+            <p data-es="Todos los días de 18:00 a 01:00. La fiesta sigue en las salas." data-en="Every day from 18:00 to 01:00. The party continues in the rooms.">Todos los días de 18:00 a 01:00. La fiesta sigue en las salas.</p>
+          </div>
+          <div class="stack-btns">
+            <a class="btn btn--ink" href="restaurant.html#reserva" data-es="Reservar mesa" data-en="Book a table">Reservar mesa</a>
+            <a class="btn btn--line" href="menu.html" data-es="Ver la carta" data-en="See the menu">Ver la carta</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="vip-banner">
+      <img src="assets/images/vip.jpg" alt="">
+      <div class="wrap vip-banner__copy">
+        <p class="kicker">VIP</p>
+        <h2 class="display"><span data-es="Tu mesa," data-en="Your table,">Tu mesa,</span> <em data-es="tu noche" data-en="your night">tu noche</em></h2>
+        <p class="lede" data-es="Botella, anfitrión y un rincón que no se pierde en la pista. Sunset en terraza o booth en sala." data-en="A bottle, a host, and a corner that doesn’t get lost on the floor. Sunset on the terrace or a booth in the room.">Botella, anfitrión y un rincón que no se pierde en la pista. Sunset en terraza o booth en sala.</p>
+        <div class="stack-btns">
+          <a class="btn btn--gold" href="vip.html" data-es="Reservar VIP" data-en="Book VIP">Reservar VIP</a>
+          <a class="btn btn--ghost" href="tel:+34645727427">+34 645 72 74 27</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap two">
+        <div class="reveal">
+          <p class="kicker" data-es="Horario" data-en="Hours">Horario</p>
+          <h2 class="display" style="font-size:clamp(2.2rem,4vw,3.4rem)"><span data-es="Cuándo" data-en="When we">Cuándo</span> <em data-es="abrimos" data-en="open">abrimos</em></h2>
+          <table class="hours">
+            <tr><th data-es="Club · dom–jue" data-en="Club · Sun–Thu">Club · dom–jue</th><td>18:00 – 05:00</td></tr>
+            <tr><th data-es="Club · vie, sáb y festivos" data-en="Club · Fri, Sat & holidays">Club · vie, sáb y festivos</th><td>18:00 – 06:00</td></tr>
+            <tr><th data-es="Restaurante · cada día" data-en="Restaurant · daily">Restaurante · cada día</th><td>18:00 – 01:00</td></tr>
+          </table>
+          <p class="fine" data-es="Entrada +18 con documento. Dress code elegante casual: no chándal, no chanclas, no ropa de playa en sala." data-en="Entry 18+ with ID. Smart casual: no sportswear, no flip-flops, no beachwear in the rooms.">Entrada +18 con documento. Dress code elegante casual: no chándal, no chanclas, no ropa de playa en sala.</p>
+        </div>
+        <div class="reveal">
+          <p class="kicker" data-es="Dónde" data-en="Where">Dónde</p>
+          <h2 class="display" style="font-size:clamp(2.2rem,4vw,3.4rem)">Buïgas 39</h2>
+          <p class="lede" data-es="Avinguda de Carles Buïgas, 39, 43840 Salou. En el corazón de la noche de la Costa Daurada." data-en="Avinguda de Carles Buïgas, 39, 43840 Salou. In the heart of Costa Daurada nightlife.">Avinguda de Carles Buïgas, 39, 43840 Salou. En el corazón de la noche de la Costa Daurada.</p>
+          <div class="stack-btns">
+            <a class="btn btn--gold" href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a>
+            <a class="btn btn--ghost" href="https://www.google.com/maps?q=41.071977,1.149595" target="_blank" rel="noopener" data-es="Cómo llegar" data-en="Directions">Cómo llegar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a class="logo" href="index.html" aria-label="Tropical Salou">
+          <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="1.1"/><path d="M24 36.2V27" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M24 27c-6-2-10-1-12 2 4-1 8-1 12-3 4 2 8 2 12 3-2-3-6-4-12-2z" fill="currentColor"/><circle cx="33" cy="15" r="1.2" fill="currentColor"/></svg>
+          <span class="logo__lockup"><span class="logo__word">Tropical</span><span class="logo__place">Salou</span></span>
+        </a>
+        <p data-es="Club, disco y restaurante en el corazón de la noche de Salou." data-en="Club, disco and restaurant in the heart of Salou nightlife.">Club, disco y restaurante en el corazón de la noche de Salou.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/tropical.salou/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3.5"/><circle cx="17.2" cy="6.8" r="0.8" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.facebook.com/tropicalsalou/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h2.6l.4-3H13v-2c0-.6.4-1 1-1z"/></svg></a>
+          <a href="https://wa.me/34695117539" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M6 18.5 6.7 16A7.5 7.5 0 1 1 8.2 17.8L6 18.5z"/><path d="M9.2 10.2c.2-.4.4-.4.7-.4h.5c.2 0 .4 0 .5.4.2.5.6 1.5.6 1.6s0 .4-.2.6l-.3.4c-.1.2-.2.3 0 .6.2.3.7 1.1 1.5 1.5.6.3.8.3 1.1.1l.5-.5c.2-.2.4-.2.6-.1.3.1 1.6.8 1.6 1.1s-.2 1.1-.7 1.3c-.4.2-1 .3-2.1-.1-1.2-.5-2.4-1.4-3.4-2.6-.9-1.1-1.6-2.4-1.8-2.9-.2-.5 0-1.1.4-1.5z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h2 data-es="Visita" data-en="Visit">Visita</h2>
+        <p>Avinguda de Carles Buïgas, 39<br>43840 Salou, Tarragona</p>
+        <p><a href="https://www.google.com/maps?q=41.071977,1.149595" target="_blank" rel="noopener" data-es="Abrir mapa" data-en="Open map">Abrir mapa</a></p>
+      </div>
+      <div>
+        <h2 data-es="Explora" data-en="Explore">Explora</h2>
+        <ul>
+          <li><a href="events.html" data-es="Eventos" data-en="Events">Eventos</a></li>
+          <li><a href="club.html" data-es="El Club" data-en="The Club">El Club</a></li>
+          <li><a href="restaurant.html">Tropical Fusion</a></li>
+          <li><a href="menu.html" data-es="Carta" data-en="Menu">Carta</a></li>
+          <li><a href="vip.html">VIP</a></li>
+          <li><a href="gallery.html" data-es="Galería" data-en="Gallery">Galería</a></li>
+          <li><a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 data-es="Reservas" data-en="Reservations">Reservas</h2>
+        <ul>
+          <li><a href="tel:+34695117539">Club · +34 695 117 539</a></li>
+          <li><a href="tel:+34645727427">VIP · +34 645 72 74 27</a></li>
+          <li><a href="tel:+34977388450" data-es="Restaurante · +34 977 388 450" data-en="Restaurant · +34 977 388 450">Restaurante · +34 977 388 450</a></li>
+          <li><a href="mailto:direccion@tropicalsalou.com">direccion@tropicalsalou.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-base">
+      <p>© 2026 Tropical Salou · +18</p>
+      <p><a href="legal.html" data-es="Aviso legal y cookies" data-en="Legal notice and cookies">Aviso legal y cookies</a></p>
+    </div>
+  </footer>
+  <noscript><style>html.i18n-wait body{visibility:visible}</style></noscript>
+  <script src="js/main.js"></script>
+</body>
+</html>

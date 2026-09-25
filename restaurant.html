@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tropical Fusion — Restaurante</title>
+  <meta name="description" content="Tropical Fusion: restaurante mediterráneo y japonés en Tropical Salou. Sushi, arroces, brasa y terraza. Cenas de 18:00 a 01:00.">
+  <meta name="theme-color" content="#090807">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,620;1,9..144,460;1,9..144,560&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function () {
+      try {
+        var l = localStorage.getItem("tropical-lang");
+        if (!l) l = (navigator.language || "").toLowerCase().indexOf("en") === 0 ? "en" : "es";
+        document.documentElement.lang = l;
+        document.documentElement.dataset.lang = l;
+        if (l === "en") document.documentElement.classList.add("i18n-wait");
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-page="restaurant" data-es-title="Tropical Fusion — Restaurante" data-en-title="Tropical Fusion — Restaurant">
+  <a class="skip" href="#main" data-es="Saltar al contenido" data-en="Skip to content">Saltar al contenido</a>
+  <header class="site-header" data-header>
+    <a class="logo" href="index.html" aria-label="Tropical Salou">
+      <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="1.1"/><path d="M24 36.2V27M24 27c-8-3-12 0-12 3 5-1 9-1 12-4 3 3 7 3 12 4 0-3-4-6-12-3z" fill="currentColor"/><circle cx="33" cy="15" r="1.2" fill="currentColor"/></svg>
+      <span class="logo__lockup"><span class="logo__word">Tropical</span><span class="logo__place">Salou</span></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="events.html" data-es="Eventos" data-en="Events">Eventos</a>
+      <a href="club.html" data-es="El Club" data-en="The Club">El Club</a>
+      <a href="restaurant.html" data-es="Restaurante" data-en="Restaurant" aria-current="page">Restaurante</a>
+      <a href="gallery.html" data-es="Galería" data-en="Gallery">Galería</a>
+      <a href="vip.html">VIP</a>
+      <a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a>
+    </nav>
+    <div class="header__actions">
+      <button type="button" class="icon-btn" id="open-bookings" aria-label="Mis solicitudes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 4.5h12v16l-6-3.2L6 20.5v-16z"/></svg><span class="badge" id="bookings-count" hidden>0</span></button>
+      <button type="button" class="lang-switch" id="lang-switch">EN</button>
+      <a class="btn btn--gold btn--small" href="#reserva" data-es="Reservar" data-en="Book">Reservar</a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-panel" aria-label="Menú"><span></span></button>
+    </div>
+  </header>
+  <div class="nav-panel" id="nav-panel" inert>
+    <a href="events.html" data-es="Eventos" data-en="Events">Eventos</a>
+    <a href="club.html" data-es="El Club" data-en="The Club">El Club</a>
+    <a href="restaurant.html" aria-current="page" data-es="Restaurante" data-en="Restaurant">Restaurante</a>
+    <a href="menu.html" data-es="Carta" data-en="Menu">Carta</a>
+    <a href="gallery.html" data-es="Galería" data-en="Gallery">Galería</a>
+    <a href="vip.html">VIP</a>
+    <a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a>
+  </div>
+
+  <main id="main">
+    <header class="page-hero">
+      <div class="page-hero__media"><img src="assets/images/restaurant.jpg" alt="Comedor de Tropical Fusion" data-es-alt="Comedor de Tropical Fusion" data-en-alt="Tropical Fusion dining room"></div>
+      <div class="wrap page-hero__content">
+        <p class="status" data-status="restaurant"><i></i><span>Fusion</span></p>
+        <h1 class="display">Tropical <em>Fusion</em></h1>
+        <p class="lede" data-es="Mediterráneo y Japón. Interior, terraza, y la puerta de las salas cuando la cena quiere seguir." data-en="Mediterranean and Japan. Dining room, terrace, and the door to the rooms when dinner wants to continue.">Mediterráneo y Japón. Interior, terraza, y la puerta de las salas cuando la cena quiere seguir.</p>
+      </div>
+    </header>
+
+    <section class="section section--ivory">
+      <div class="wrap signature">
+        <figure>
+          <img src="assets/images/sushi.jpg" alt="Selección de sushi" data-es-alt="Selección de sushi" data-en-alt="Sushi selection">
+          <figcaption><strong data-es="Sushi de la casa" data-en="House sushi">Sushi de la casa</strong><span data-es="Atún Gadira, gamba roja, salmón." data-en="Gadira tuna, red prawn, salmon.">Atún Gadira, gamba roja, salmón.</span></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/terrace.jpg" alt="Terraza para cenar" data-es-alt="Terraza para cenar" data-en-alt="Dining terrace">
+          <figcaption><strong data-es="Terraza" data-en="Terrace">Terraza</strong><span data-es="Cenas con aire de costa." data-en="Dinner with the coast in the air.">Cenas con aire de costa.</span></figcaption>
+        </figure>
+      </div>
+      <div class="wrap" style="margin-top:2.5rem">
+        <div class="two">
+          <div>
+            <p class="kicker" data-es="La mesa" data-en="The table">La mesa</p>
+            <h2 class="display" style="font-size:clamp(2.2rem,4vw,3.6rem)"><span data-es="Una carta," data-en="One menu,">Una carta,</span> <em data-es="dos mares" data-en="two seas">dos mares</em></h2>
+          </div>
+          <div class="prose">
+            <p data-es="Ensaladas, entrantes, sushi, pastas, arroces al Josper con brasa de encina, pescados y carnes. La carta de vinos hace el resto. Hay noches con cantantes, monólogos y baile en vivo: pregunta al reservar." data-en="Salads, starters, sushi, pasta, Josper rice over oak embers, fish and meat. The wine list does the rest. Some nights bring singers, comedy and live dance — ask when you book.">Ensaladas, entrantes, sushi, pastas, arroces al Josper con brasa de encina, pescados y carnes. La carta de vinos hace el resto. Hay noches con cantantes, monólogos y baile en vivo: pregunta al reservar.</p>
+            <p data-es="Cocina abierta todos los días de 18:00 a 01:00. Después, las salas siguen." data-en="Kitchen open every day from 18:00 to 01:00. After that, the rooms carry on.">Cocina abierta todos los días de 18:00 a 01:00. Después, las salas siguen.</p>
+            <a class="btn btn--ink" href="menu.html" data-es="Ver la carta" data-en="See the menu">Ver la carta</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--ivory" style="padding-top:0">
+      <div class="wrap">
+        <p class="kicker" data-es="Para grupos" data-en="For groups">Para grupos</p>
+        <h2 class="display" style="font-size:clamp(2.2rem,4vw,3.4rem)"><span data-es="Cenas de empresa" data-en="Company dinners">Cenas de empresa</span> <em data-es="y fechas" data-en="and dates">y fechas</em></h2>
+        <p class="lede" data-es="Cumpleaños, equipos, despedidas. Menús de grupo bajo petición. Cuéntanos fecha, tamaño y si la noche sigue en el club." data-en="Birthdays, teams, send-offs. Group menus on request. Tell us the date, the size, and whether the night continues in the club.">Cumpleaños, equipos, despedidas. Menús de grupo bajo petición. Cuéntanos fecha, tamaño y si la noche sigue en el club.</p>
+        <div class="stack-btns">
+          <a class="btn btn--ink" href="https://wa.me/34699680057" target="_blank" rel="noopener">WhatsApp · +34 699 68 00 57</a>
+          <a class="btn btn--line" href="tel:+34977388450">+34 977 388 450</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reserva">
+      <div class="wrap contact-grid">
+        <div>
+          <p class="kicker" data-es="Reserva" data-en="Reservation">Reserva</p>
+          <h2 class="display" style="font-size:clamp(2.2rem,4vw,3.6rem)"><span data-es="Pide" data-en="Ask for">Pide</span> <em data-es="mesa" data-en="a table">mesa</em></h2>
+          <p class="lede" data-es="El formulario prepara el mensaje y abre WhatsApp. Hasta que no lo envías, la mesa no está pedida." data-en="The form prepares the message and opens WhatsApp. Until you send it, the table is not requested.">El formulario prepara el mensaje y abre WhatsApp. Hasta que no lo envías, la mesa no está pedida.</p>
+          <p class="fine">+34 699 68 00 57 · +34 977 388 450 · direccion@tropicalsalou.com</p>
+        </div>
+        <div>
+          <form class="form" id="table-form">
+            <label class="field"><span data-es="Nombre" data-en="Name">Nombre</span><input name="name" required autocomplete="name"></label>
+            <div class="field-row">
+              <label class="field"><span>Email</span><input name="email" type="email" required autocomplete="email"></label>
+              <label class="field"><span data-es="Teléfono" data-en="Phone">Teléfono</span><input name="phone" type="tel" required autocomplete="tel"></label>
+            </div>
+            <div class="field-row">
+              <label class="field"><span data-es="Fecha" data-en="Date">Fecha</span><input name="date" type="date" required></label>
+              <label class="field"><span data-es="Hora" data-en="Time">Hora</span>
+                <select name="time">
+                  <option>18:30</option><option>19:00</option><option>19:30</option><option>20:00</option><option selected>20:30</option><option>21:00</option><option>21:30</option><option>22:00</option><option>22:30</option><option>23:00</option>
+                </select>
+              </label>
+            </div>
+            <label class="field"><span data-es="Personas" data-en="Guests">Personas</span>
+              <select name="guests"><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>10</option><option>12</option><option>16</option><option>20</option></select>
+            </label>
+            <label class="field"><span data-es="Notas" data-en="Notes">Notas</span><textarea name="notes" data-es-placeholder="Terraza, alergias, celebración…" data-en-placeholder="Terrace, allergies, celebration…" placeholder="Terraza, alergias, celebración…"></textarea></label>
+            <div class="hp" aria-hidden="true"><label>Company<input name="company" tabindex="-1" autocomplete="off"></label></div>
+            <p class="form-error" hidden></p>
+            <button class="btn btn--gold" type="submit" data-es="Pedir mesa por WhatsApp" data-en="Request a table on WhatsApp">Pedir mesa por WhatsApp</button>
+          </form>
+          <div class="form-success" hidden></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-base">
+      <p>© 2026 Tropical Fusion · Salou · 18:00–01:00</p>
+      <p><a href="menu.html" data-es="Carta" data-en="Menu">Carta</a> · <a href="index.html">Tropical</a> · <a href="legal.html" data-es="Aviso legal" data-en="Legal">Aviso legal</a></p>
+    </div>
+  </footer>
+  <noscript><style>html.i18n-wait body{visibility:visible}</style></noscript>
+  <script src="js/main.js"></script>
+</body>
+</html>

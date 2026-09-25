@@ -1,0 +1,92 @@
+[
+  {
+    "id": "bye-bye-summer",
+    "title": "Bye Bye Summer",
+    "date": "2026-09-25",
+    "time": "22:00",
+    "when": "25 Sep · 22:00",
+    "image": "assets/images/dance.jpg",
+    "genre": "Latin · Commercial"
+  },
+  {
+    "id": "the-show",
+    "title": "The Show",
+    "date": "2026-09-26",
+    "time": "22:00",
+    "when": "26 Sep · 22:00",
+    "image": "assets/images/dj.jpg",
+    "genre": "Shows · Commercial"
+  },
+  {
+    "id": "cachondeo",
+    "title": "Cachondeo en Las Vegas",
+    "date": "2026-09-27",
+    "time": "22:00",
+    "when": "27 Sep · 22:00",
+    "image": "assets/images/vip.jpg",
+    "genre": "Glam · Commercial"
+  },
+  {
+    "id": "boyfriend",
+    "title": "Don't Tell Your Boyfriend",
+    "date": "2026-09-28",
+    "time": "22:00",
+    "when": "28 Sep · 22:00",
+    "image": "assets/images/hero.jpg",
+    "genre": "Commercial · Hits"
+  },
+  {
+    "id": "free-love",
+    "title": "Free Love",
+    "date": "2026-09-29",
+    "time": "22:00",
+    "when": "29 Sep · 22:00",
+    "image": "assets/images/terrace.jpg",
+    "genre": "House · Latin"
+  },
+  {
+    "id": "morena",
+    "title": "Morena",
+    "date": "2026-09-30",
+    "time": "22:00",
+    "when": "30 Sep · 22:00",
+    "image": "assets/images/white.jpg",
+    "genre": "White party"
+  },
+  {
+    "id": "this-is-tropical-02",
+    "title": "This is Tropical",
+    "date": "2026-10-02",
+    "time": "00:00",
+    "when": "02 Oct · 00:00",
+    "image": "assets/images/exterior.jpg",
+    "genre": "House night"
+  },
+  {
+    "id": "coraje",
+    "title": "Coraje",
+    "date": "2026-10-03",
+    "time": "00:00",
+    "when": "03 Oct · 00:00",
+    "image": "assets/images/dj.jpg",
+    "genre": "Bass · Commercial"
+  },
+  {
+    "id": "dale-don-dale",
+    "title": "Dale Don Dale",
+    "date": "2026-10-04",
+    "time": "00:00",
+    "when": "04 Oct · 00:00",
+    "image": "assets/images/dance.jpg",
+    "genre": "Reggaeton · Latin"
+  },
+  {
+    "id": "this-is-tropical-05",
+    "title": "This is Tropical",
+    "date": "2026-10-05",
+    "time": "00:00",
+    "when": "05 Oct · 00:00",
+    "image": "assets/images/hero.jpg",
+    "genre": "House night"
+  }
+]

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto — Tropical Salou</title>
+  <meta name="description" content="Contacto, horario y mapa de Tropical Salou. Avinguda de Carles Buïgas 39, Salou.">
+  <meta name="theme-color" content="#090807">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,620;1,9..144,460;1,9..144,560&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function () {
+      try {
+        var l = localStorage.getItem("tropical-lang");
+        if (!l) l = (navigator.language || "").toLowerCase().indexOf("en") === 0 ? "en" : "es";
+        document.documentElement.lang = l;
+        document.documentElement.dataset.lang = l;
+        if (l === "en") document.documentElement.classList.add("i18n-wait");
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-page="contact" data-es-title="Contacto — Tropical Salou" data-en-title="Contact — Tropical Salou">
+  <a class="skip" href="#main" data-es="Saltar al contenido" data-en="Skip to content">Saltar al contenido</a>
+  <header class="site-header" data-header>
+    <a class="logo" href="index.html" aria-label="Tropical Salou">
+      <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="1.1"/><path d="M24 36V26" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M14 24c3-6 6-8 10-8s7 2 10 8c-3-2-6-3-10-3s-7 1-10 3z" fill="currentColor"/><circle cx="33" cy="15" r="1.2" fill="currentColor"/></svg>
+      <span class="logo__lockup"><span class="logo__word">Tropical</span><span class="logo__place">Salou</span></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="events.html" data-es="Eventos" data-en="Events">Eventos</a>
+      <a href="club.html" data-es="El Club" data-en="The Club">El Club</a>
+      <a href="restaurant.html" data-es="Restaurante" data-en="Restaurant">Restaurante</a>
+      <a href="gallery.html" data-es="Galería" data-en="Gallery">Galería</a>
+      <a href="vip.html">VIP</a>
+      <a href="contact.html" data-es="Contacto" data-en="Contact" aria-current="page">Contacto</a>
+    </nav>
+    <div class="header__actions">
+      <button type="button" class="icon-btn" id="open-bookings" aria-label="Mis solicitudes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 4.5h12v16l-6-3.2L6 20.5v-16z"/></svg><span class="badge" id="bookings-count" hidden>0</span></button>
+      <button type="button" class="lang-switch" id="lang-switch">EN</button>
+      <a class="btn btn--gold btn--small" href="events.html">Tickets</a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-panel" aria-label="Menú"><span></span></button>
+    </div>
+  </header>
+  <div class="nav-panel" id="nav-panel" inert>
+    <a href="events.html" data-es="Eventos" data-en="Events">Eventos</a>
+    <a href="club.html" data-es="El Club" data-en="The Club">El Club</a>
+    <a href="restaurant.html" data-es="Restaurante" data-en="Restaurant">Restaurante</a>
+    <a href="gallery.html" data-es="Galería" data-en="Gallery">Galería</a>
+    <a href="vip.html">VIP</a>
+    <a href="contact.html" aria-current="page" data-es="Contacto" data-en="Contact">Contacto</a>
+  </div>
+
+  <main id="main">
+    <header class="page-hero">
+      <div class="page-hero__media"><img src="assets/images/terrace.jpg" alt="Terraza de Tropical" data-es-alt="Terraza de Tropical" data-en-alt="Tropical terrace"></div>
+      <div class="wrap page-hero__content">
+        <p class="status" data-status="club"><i></i><span>Salou</span></p>
+        <h1 class="display" data-es="Contacto" data-en="Contact">Contacto</h1>
+        <p class="lede" data-es="Club, VIP o mesa. Respondemos por teléfono, WhatsApp y email." data-en="Club, VIP or a table. We answer by phone, WhatsApp and email.">Club, VIP o mesa. Respondemos por teléfono, WhatsApp y email.</p>
+      </div>
+    </header>
+
+    <section class="section" id="reservas">
+      <div class="wrap contact-grid">
+        <div>
+          <ul class="info-list">
+            <li><strong>Club</strong><a href="tel:+34695117539">+34 695 117 539</a></li>
+            <li><strong>VIP</strong><a href="tel:+34645727427">+34 645 72 74 27</a></li>
+            <li><strong data-es="Restaurante" data-en="Restaurant">Restaurante</strong><a href="tel:+34977388450">+34 977 388 450</a><br><a href="https://wa.me/34699680057" target="_blank" rel="noopener">WhatsApp · +34 699 68 00 57</a></li>
+            <li><strong>Email</strong><a href="mailto:direccion@tropicalsalou.com">direccion@tropicalsalou.com</a></li>
+            <li><strong data-es="Dirección" data-en="Address">Dirección</strong>Avinguda de Carles Buïgas, 39<br>43840 Salou, Tarragona<br><a href="https://www.google.com/maps?q=41.071977,1.149595" target="_blank" rel="noopener" data-es="Abrir en Maps" data-en="Open in Maps">Abrir en Maps</a></li>
+          </ul>
+          <table class="hours">
+            <tr><th data-es="Club · dom–jue" data-en="Club · Sun–Thu">Club · dom–jue</th><td>18:00 – 05:00</td></tr>
+            <tr><th data-es="Club · vie, sáb y festivos" data-en="Club · Fri, Sat & holidays">Club · vie, sáb y festivos</th><td>18:00 – 06:00</td></tr>
+            <tr><th data-es="Restaurante" data-en="Restaurant">Restaurante</th><td data-es="Todos los días 18:00 – 01:00" data-en="Every day 18:00 – 01:00">Todos los días 18:00 – 01:00</td></tr>
+          </table>
+        </div>
+        <div>
+          <form class="form" id="contact-form">
+            <label class="field"><span data-es="Tema" data-en="Topic">Tema</span>
+              <select name="topic">
+                <option data-es="Club" data-en="Club">Club</option>
+                <option>VIP</option>
+                <option data-es="Restaurante" data-en="Restaurant">Restaurante</option>
+                <option data-es="Evento privado" data-en="Private event">Evento privado</option>
+                <option data-es="Otra consulta" data-en="Other">Otra consulta</option>
+              </select>
+            </label>
+            <label class="field"><span data-es="Nombre" data-en="Name">Nombre</span><input name="name" required autocomplete="name"></label>
+            <div class="field-row">
+              <label class="field"><span>Email</span><input name="email" type="email" required autocomplete="email"></label>
+              <label class="field"><span data-es="Teléfono" data-en="Phone">Teléfono</span><input name="phone" type="tel" required autocomplete="tel"></label>
+            </div>
+            <label class="field"><span data-es="Mensaje" data-en="Message">Mensaje</span><textarea name="message" required data-es-placeholder="Cuéntanos" data-en-placeholder="Tell us" placeholder="Cuéntanos"></textarea></label>
+            <div class="hp" aria-hidden="true"><label>Company<input name="company" tabindex="-1" autocomplete="off"></label></div>
+            <p class="form-error" hidden></p>
+            <button class="btn btn--gold" type="submit" data-es="Enviar por WhatsApp" data-en="Send on WhatsApp">Enviar por WhatsApp</button>
+          </form>
+          <div class="form-success" hidden></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="wrap map-frame">
+        <iframe title="Mapa de Tropical Salou" src="https://maps.google.com/maps?q=41.071977,1.149595&z=16&hl=es&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <section class="section section--sand">
+      <div class="wrap">
+        <p class="kicker">FAQ</p>
+        <h2 class="display" style="font-size:clamp(2.2rem,4vw,3.2rem)"><span data-es="Antes de" data-en="Before you">Antes de</span> <em data-es="salir" data-en="leave">salir</em></h2>
+        <div class="faq">
+          <details open>
+            <summary data-es="¿Hay edad mínima?" data-en="Is there a minimum age?">¿Hay edad mínima?</summary>
+            <p data-es="+18 con documento original. Sin documento no hay entrada, ni en lista ni en mesa." data-en="18+ with original ID. No ID, no entry — not on the list, not at a table.">+18 con documento original. Sin documento no hay entrada, ni en lista ni en mesa.</p>
+          </details>
+          <details>
+            <summary data-es="¿Cómo funcionan los tickets de esta web?" data-en="How do tickets on this site work?">¿Cómo funcionan los tickets de esta web?</summary>
+            <p data-es="Preparas la solicitud y la envías por WhatsApp o email. No hay cobro online. El equipo confirma precio y disponibilidad." data-en="You prepare the request and send it by WhatsApp or email. There is no online charge. The team confirms price and availability.">Preparas la solicitud y la envías por WhatsApp o email. No hay cobro online. El equipo confirma precio y disponibilidad.</p>
+          </details>
+          <details>
+            <summary data-es="¿El restaurante y el club son el mismo sitio?" data-en="Are the restaurant and the club the same place?">¿El restaurante y el club son el mismo sitio?</summary>
+            <p data-es="Sí. Tropical Fusion está en el mismo edificio. La cena puede seguir en las salas." data-en="Yes. Tropical Fusion is in the same building. Dinner can continue in the rooms.">Sí. Tropical Fusion está en el mismo edificio. La cena puede seguir en las salas.</p>
+          </details>
+          <details>
+            <summary data-es="¿Qué me pongo?" data-en="What do I wear?">¿Qué me pongo?</summary>
+            <p data-es="Elegante casual. No chándal, no chanclas, no ropa de playa en sala. En Morena y otras white parties, todo blanco." data-en="Smart casual. No sportswear, no flip-flops, no beachwear in the rooms. For Morena and other white parties, all white.">Elegante casual. No chándal, no chanclas, no ropa de playa en sala. En Morena y otras white parties, todo blanco.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-base">
+      <p>© 2026 Tropical Salou · Buïgas 39, Salou · +18</p>
+      <p><a href="legal.html" data-es="Aviso legal y cookies" data-en="Legal notice and cookies">Aviso legal y cookies</a> · <a href="index.html">Tropical</a></p>
+    </div>
+  </footer>
+  <noscript><style>html.i18n-wait body{visibility:visible}</style></noscript>
+  <script src="js/main.js"></script>
+</body>
+</html>
