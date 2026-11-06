@@ -1,9 +1,0 @@
-{
-  "name": "VOLTA",
-  "short_name": "VOLTA",
-  "start_url": "./index.html",
-  "display": "standalone",
-  "background_color": "#06070b",
-  "theme_color": "#06070b",
-  "icons": [{ "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
-}
